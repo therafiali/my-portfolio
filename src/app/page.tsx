@@ -1,8 +1,10 @@
-import NavbarHeader from '@/Components/Navbar/Navbar'
-import React from 'react'
+import BgImage from "@/Components/Background Image/BgImage";
+import NavbarHeader from "@/Components/Navbar/Navbar";
+
 
 const Home = () => {
   return (
+<<<<<<< HEAD
    <main>
    <NavbarHeader/>
 <p>
@@ -55,3 +57,12 @@ Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 }
 
 export default Home
+=======
+    <main className="">
+      <BgImage/>
+    </main>
+  );
+};
+
+export default Home;
+>>>>>>> e2979b0d2eac80b046b3a00f0b45de71aed7e866
