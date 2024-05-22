@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    scroll-behavior: smooth;
+}
 .bg-image {
     background-color: #f6f2ea;
     background-image: url("../assets/bg-image.svg"),url("../assets/bg-gradient.png");
@@ -33,6 +36,7 @@ section {
     font-size: 100px;
     color: #fff;
     font-weight: 700;
+    scroll-behavior: smooth;
 }
 section:nth-child(odd) {
     background: #323946;

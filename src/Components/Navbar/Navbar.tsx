@@ -36,11 +36,11 @@ export default function NavbarHeader() {
         <div className="flex justify-center">
           <div className="shadow-nav bg-gradient-to-r from-black to-gray-800 border border-black rounded-full flex items-stretch px-[6px] shadow-md p-2">
             <nav className="flex">
-              <a href="#home" className="active flex items-center justify-center font-medium border-red- text-white  rounded-[60px] px-6 py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-300 hover:translate-x-[2px]">Home </a>
-              <a href="#about" className=" flex items-center justify-center font-medium border-red- text-white  rounded-[60px] px-6 py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-300 hover:translate-x-[2px]">About</a>
-              <a href="#services" className=" flex items-center justify-center font-medium border-red- text-white  rounded-[60px] px-6 py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-300 hover:translate-x-[2px]">Services</a>
-              <a href="#portfolio" className=" flex items-center justify-center font-medium border-red- text-white  rounded-[60px] px-6 py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-300 hover:translate-x-[2px]">Portfolio</a>
-              <a href="#contact" className=" flex items-center justify-center font-medium border-red- text-white  rounded-[60px] px-6 py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-300 hover:translate-x-[2px]">Contact</a>
+              <a href="#home" className="active flex items-center justify-center font-medium border-red- text-white  rounded-[60px] px-6 py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]">Home </a>
+              <a href="#about" className=" flex items-center justify-center font-medium border-red- text-white  rounded-[60px] px-6 py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]">About</a>
+              <a href="#services" className=" flex items-center justify-center font-medium border-red- text-white  rounded-[60px] px-6 py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]">Services</a>
+              <a href="#portfolio" className=" flex items-center justify-center font-medium border-red- text-white  rounded-[60px] px-6 py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]">Portfolio</a>
+              <a href="#contact" className=" flex items-center justify-center font-medium border-red- text-white  rounded-[60px] px-6 py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]">Contact</a>
             </nav>
           </div>
         </div>
