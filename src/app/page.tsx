@@ -1,11 +1,14 @@
-import BgImage from "@/Components/Background Image/BgImage";
 import NavbarHeader from "@/Components/Navbar/Navbar";
-import BgImage1 from "../assets/bg-image.svg";
 
 const Home = () => {
   return (
     <main className="bg-image">
-   <NavbarHeader/>
+      <section id="home">Home</section>
+      <section id="about">About</section>
+      <section id="services">Services</section>
+      <section id="portfolio">Portfolio</section>
+      <section id="contact">Contact</section>
+      <NavbarHeader />
     </main>
   );
 };
