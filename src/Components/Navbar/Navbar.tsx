@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useEffect } from "react";
-import { NavArrayTypes, navbarItems } from "./navbarItems";
 import Link from "next/link";
 
 export default function NavbarHeader() {

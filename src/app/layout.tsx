@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Kanit } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./Providers";
+import Logo from "@/Components/Logo/Logo";
 
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Kanit({
+  subsets: ["latin"],
+ weight:["100","200","300","400","500","600","700","800","900"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Logo/>
         <Providers>{children}</Providers>
       </body>
     </html>
