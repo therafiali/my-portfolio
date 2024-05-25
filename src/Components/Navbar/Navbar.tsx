@@ -33,7 +33,7 @@ export default function NavbarHeader() {
     <div>
       <div className="fixed z-100  pb-8 px-8 bottom-0 left-0 right-0 bg-transparent">
         <div className="flex justify-center">
-          <div className="shadow-nav bg-gradient-to-r from-black to-gray-800 border border-black rounded-full flex items-stretch px-[6px] shadow-md p-2">
+          <div className="shadow-nav bg-gradient-to-r from-black to-gray-800 border border-black rounded-full flex items-stretch px-[6px] shadow-md p-2 ">
             <nav className="flex">
               <a href="#home" className="active flex items-center justify-center tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right border-red- text-white  rounded-[60px] px-6 py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]">Home </a>
               <a href="#about" className=" flex items-center justify-center  tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right  text-white  rounded-[60px] px-6 py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]">About</a>

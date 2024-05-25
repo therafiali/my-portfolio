@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Kanit } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./Providers";
 import Logo from "@/Components/Logo/Logo";
+import Wrapper from "@/Components/Wrapper/Wrapper";
 
-
-const inter = Kanit({
-  subsets: ["latin"],
- weight:["100","200","300","400","500","600","700","800","900"],
+const inter = Montserrat({
+  subsets: ["cyrillic"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -23,8 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Logo/>
-        <Providers>{children}</Providers>
+        <Logo />
+        <Wrapper>
+          <Providers>{children}</Providers>
+        </Wrapper>
       </body>
     </html>
   );

@@ -1,9 +1,10 @@
 const Hero = () => {
   return (
-    <div  className="pt-10">
-      <h1 className="text-sm font-semibold text-[#353535]">
-        We bring your ideas to life through user-friendly, game-changing tech
-        that empowers people and builds the future, together&nbsp;
+    <div className="pt-20">
+      <h1 className="flex flex-col scroll-m-20 text-4xl text-center font-semibold tracking-normal lg:text-6xl mt-8 leading-relaxed ">
+        <span>Turning Dreams into Reality</span>
+        <span>&</span>
+        <span>Problems into Solutions.</span>
       </h1>
     </div>
   );
