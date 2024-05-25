@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <main className="bg-image">
       <Hero/>
+      
 
       <NavbarHeader />
     </main>

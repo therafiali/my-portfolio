@@ -6,7 +6,7 @@ import Link from "next/link";
 const Logo = () => {
   return (
     <Link className="relative" href={"/"}>
-      <div className="relative flex justify-center items-center cursor-pointer h-16 border border-red-500 w-44 mx-auto">
+      <div className="relative flex justify-center items-center cursor-pointer h-16  w-44 mx-auto">
         <Image
           className=" absolute select-none "
           src={logo}
