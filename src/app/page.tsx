@@ -8,6 +8,7 @@
      <main className="bg-image">
        <Hero />
        <SliderSection />
+       <Hero />
        {/* <Hero /> */}
        <NavbarHeader />
      </main>
