@@ -20,13 +20,13 @@ export default function SliderSection() {
       trigger: ".content-wrapper",
       pin: true,
       start: "top top",
-      end: "+=200%",
+      end: "+=50%",
     });
 
     let tl = gsap.timeline();
 
     tl.to(textWrappers, {
-      x: "-300%",
+      x: "-50%",
       scrollTrigger: {
         start: () => pinTrigger?.start,
         end: () => pinTrigger?.end,
@@ -40,9 +40,9 @@ export default function SliderSection() {
     };
   });
   return (
-    <div className="content-wrapper  overflow-x-hidden">
+    <div className="content-wrapper overflow-hidden ">
       {/* Your component content */}
-      <div className="your-text-wrapper-class flex justify-center items-center h-screen space-x-4 ml-[50rem]">
+      <div className="your-text-wrapper-class flex justify-center items-center h-screen space-x-4 md:ml[50rem]">
         {/* Your text content */}
         <Image
           className="border rounded-lg"
