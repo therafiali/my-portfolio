@@ -117,3 +117,13 @@ nav a.active {
 .text-vw{
   font-size: 10vw;
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: slategray;
+  background: #90e0ef;
+}
+
+::selection {
+  color: slategray;
+  background: #90e0ef;
+}
