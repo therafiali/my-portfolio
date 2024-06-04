@@ -127,3 +127,8 @@ nav a.active {
   color: slategray;
   background: #90e0ef;
 }
+
+.myDuration {
+  transition-duration: 5000ms;
+  animation-duration: 5000ms;
+}
