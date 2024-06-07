@@ -16,13 +16,11 @@
   }
 }
 
-
-
 body {
   color: rgb(var(--foreground-rgb));
-.text-vw{
-  font-size: 10vw;
-}
+  .text-vw {
+    font-size: 10vw;
+  }
 }
 @layer base {
   :root {
@@ -88,15 +86,15 @@ body {
   }
 }
 
-
 * {
   scroll-behavior: smooth;
 }
 .bg-image {
   background-color: #f6f2ea;
-  background-image: url("../assets/bg-image.svg"),url("../assets/bg-gradient.png");
-  background-position: 0 0,0 0;
-  background-size: auto,auto;
+  background-image: url("../assets/bg-image.svg"),
+    url("../assets/bg-gradient.png");
+  background-position: 0 0, 0 0;
+  background-size: auto, auto;
   border-radius: 36px;
   max-width: 1440px;
   margin-left: auto;
@@ -105,20 +103,22 @@ body {
 }
 
 .shadow-nav {
-  box-shadow: 0 4px 8px 2px rgba(0,0,0,.27),0 10px 20px 1px rgba(0,0,0,.2),inset 0 2px 1px rgba(255,255,255,.5)
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.27),
+    0 10px 20px 1px rgba(0, 0, 0, 0.2), inset 0 2px 1px rgba(255, 255, 255, 0.5);
 }
 nav a:hover,
 nav a.active {
-    color: #000;
-    --tw-bg-opacity: 1;
-    background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+  color: #000;
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
-.text-vw{
+.text-vw {
   font-size: 10vw;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: slategray;
   background: #90e0ef;
 }
@@ -132,3 +132,4 @@ nav a.active {
   transition-duration: 5000ms;
   animation-duration: 5000ms;
 }
+
