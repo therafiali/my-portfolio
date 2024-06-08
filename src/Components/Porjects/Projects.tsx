@@ -9,6 +9,7 @@ import gallery from "@/assets/gallery.png";
 import chatbot from "@/assets/chatbot.jpg";
 import fastapi from "@/assets/fastapi.jpg";
 import email from "@/assets/email.jpg";
+import autoresponder from "@/assets/autoresponder.jpg";
 import Image from "next/image";
 import { Card } from "./Card";
 import Link from "next/link";
@@ -146,7 +147,7 @@ const Projects = () => {
             href={"https://www.youtube.com/shorts/KzrXvj7wBsQ"}
           >
             <Card
-              src={email}
+              src={autoresponder}
               title="Whatsapp Autoresponder for Server Monitoring - Python"
               link="https://bit.ly/therafialiscripts"
             />
