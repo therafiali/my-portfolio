@@ -3,9 +3,12 @@ import Yellow from "@/assets/greenred.svg";
 import dine from "@/assets/dinemarket.png";
 import first from "@/assets/first.png";
 import portfolio from "@/assets/portfolio.png";
-import todo from "@/assets/todo.png"
-import panaverse from "@/assets/panaverse.png"
-import gallery from "@/assets/gallery.png"
+import todo from "@/assets/todo.png";
+import panaverse from "@/assets/panaverse.png";
+import gallery from "@/assets/gallery.png";
+import chatbot from "@/assets/chatbot.jpg";
+import fastapi from "@/assets/fastapi.jpg";
+import email from "@/assets/email.jpg";
 import Image from "next/image";
 import { Card } from "./Card";
 import Link from "next/link";
@@ -66,10 +69,7 @@ const Projects = () => {
           </Link>
         </div>
         <div className="col-span-1">
-          <Link
-            target="_blank"
-            href={"https://therafiali.vercel.app/"}
-          >
+          <Link target="_blank" href={"https://therafiali.vercel.app/"}>
             <Card
               src={portfolio}
               title="Portfolio Web"
@@ -78,10 +78,7 @@ const Projects = () => {
           </Link>
         </div>
         <div className="col-span-1">
-          <Link
-            target="_blank"
-            href={"https://todo-app-one-black.vercel.app/"}
-          >
+          <Link target="_blank" href={"https://todo-app-one-black.vercel.app/"}>
             <Card
               src={todo}
               title="Todo App"
@@ -110,6 +107,48 @@ const Projects = () => {
               src={panaverse}
               title="Panaverse Simple web app"
               link="https://panaverse-clone-theta.vercel.app/"
+            />
+          </Link>
+        </div>
+        <div className="col-span-1">
+          <Link target="_blank" href={"http://bit.ly/therafialigenerativeai"}>
+            <Card
+              src={chatbot}
+              title="OpenAI Based BookStore Chatbot"
+              link="http://bit.ly/therafialigenerativeai"
+            />
+          </Link>
+        </div>
+        <div className="col-span-1">
+          <Link target="_blank" href={"https://bit.ly/therafialiapi"}>
+            <Card
+              src={fastapi}
+              title="Crud Operations in FASTAPI - Python"
+              link="https://bit.ly/therafialiapi"
+            />
+          </Link>
+        </div>
+        <div className="col-span-1">
+          <Link
+            target="_blank"
+            href={"https://www.youtube.com/watch?v=pRZ7LQUKjxY"}
+          >
+            <Card
+              src={email}
+              title="Email Scraper - Python Selenium"
+              link="https://bit.ly/therafialiscripts"
+            />
+          </Link>
+        </div>
+        <div className="col-span-1">
+          <Link
+            target="_blank"
+            href={"https://www.youtube.com/shorts/KzrXvj7wBsQ"}
+          >
+            <Card
+              src={email}
+              title="Whatsapp Autoresponder for Server Monitoring - Python"
+              link="https://bit.ly/therafialiscripts"
             />
           </Link>
         </div>
