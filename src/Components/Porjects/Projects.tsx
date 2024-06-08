@@ -36,7 +36,7 @@ const Projects = () => {
           </small>
           <div className="mx-auto flex flex-col items-center">
             <blockquote className="mt-6 border-l-2 pl-6 italic ">
-              “ it’s a showcase of progress, what you’ve learned,
+              “ it&apos;s a showcase of progress, what you&apos;ve learned,
             </blockquote>
             <blockquote className="mt-6 border-l-2 pl-6 italic ">
               and your plans for what comes next.”

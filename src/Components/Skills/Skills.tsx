@@ -23,7 +23,7 @@ const Skills = () => {
         </small>
         <div className="mx-auto flex flex-col items-center">
           <blockquote className="mt-6 border-l-2 pl-6 italic ">
-            “Don’t wish for less problems;
+            “Don&apos;t wish for less problems;
           </blockquote>
           <blockquote className="mt-6 border-l-2 pl-6 italic ">
             wish for more skills.”
