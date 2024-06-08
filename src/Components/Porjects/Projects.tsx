@@ -4,9 +4,16 @@ import dine from "@/assets/dinemarket.png";
 import first from "@/assets/first.png";
 import portfolio from "@/assets/portfolio.png";
 import todo from "@/assets/todo.png";
+import panaverse from "@/assets/panaverse.png";
+import gallery from "@/assets/gallery.png";
+import chatbot from "@/assets/chatbot.jpg";
+import fastapi from "@/assets/fastapi.jpg";
+import email from "@/assets/email.jpg";
+import autoresponder from "@/assets/autoresponder.jpg";
 import Image from "next/image";
 import { Card } from "./Card";
 import Link from "next/link";
+
 
 const Projects = () => {
   return (
@@ -30,7 +37,7 @@ const Projects = () => {
           </small>
           <div className="mx-auto flex flex-col items-center">
             <blockquote className="mt-6 border-l-2 pl-6 italic ">
-              “ it’s a showcase of progress, what you’ve learned,
+              “ it&apos;s a showcase of progress, what you&apos;ve learned,
             </blockquote>
             <blockquote className="mt-6 border-l-2 pl-6 italic ">
               and your plans for what comes next.”
@@ -78,6 +85,72 @@ const Projects = () => {
               src={todo}
               title="Todo App"
               link="https://todo-app-one-black.vercel.app/"
+            />
+          </Link>
+        </div>
+        <div className="col-span-1">
+          <Link
+            target="_blank"
+            href={"https://image-gallery-app-gamma.vercel.app/gallery"}
+          >
+            <Card
+              src={gallery}
+              title="Image Gallery App using Cloudinary API"
+              link="https://image-gallery-app-gamma.vercel.app/gallery"
+            />
+          </Link>
+        </div>
+        <div className="col-span-1">
+          <Link
+            target="_blank"
+            href={"https://panaverse-clone-theta.vercel.app/"}
+          >
+            <Card
+              src={panaverse}
+              title="Panaverse Simple web app"
+              link="https://panaverse-clone-theta.vercel.app/"
+            />
+          </Link>
+        </div>
+        <div className="col-span-1">
+          <Link target="_blank" href={"http://bit.ly/therafialigenerativeai"}>
+            <Card
+              src={chatbot}
+              title="OpenAI Based BookStore Chatbot"
+              link="http://bit.ly/therafialigenerativeai"
+            />
+          </Link>
+        </div>
+        <div className="col-span-1">
+          <Link target="_blank" href={"https://bit.ly/therafialiapi"}>
+            <Card
+              src={fastapi}
+              title="Crud Operations in FASTAPI - Python"
+              link="https://bit.ly/therafialiapi"
+            />
+          </Link>
+        </div>
+        <div className="col-span-1">
+          <Link
+            target="_blank"
+            href={"https://www.youtube.com/watch?v=pRZ7LQUKjxY"}
+          >
+            <Card
+              src={email}
+              title="Email Scraper - Python Selenium"
+              link="https://bit.ly/therafialiscripts"
+            />
+          </Link>
+        </div>
+        <div className="col-span-1">
+          <Link
+            target="_blank"
+            href={"https://www.youtube.com/shorts/KzrXvj7wBsQ"}
+          >
+            <Card
+              src={autoresponder}
+              title="Whatsapp Autoresponder for Server Monitoring - Python"
+              link="https://bit.ly/therafialiscripts"
             />
           </Link>
         </div>
