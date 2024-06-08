@@ -3,7 +3,7 @@ import Yellow from "@/assets/greenred.svg";
 import dine from "@/assets/dinemarket.png";
 import first from "@/assets/first.png";
 import portfolio from "@/assets/portfolio.png";
-import todo from "@/assets/todo.png"
+import todo from "@/assets/todo.png";
 import Image from "next/image";
 import { Card } from "./Card";
 import Link from "next/link";
@@ -64,10 +64,7 @@ const Projects = () => {
           </Link>
         </div>
         <div className="col-span-1">
-          <Link
-            target="_blank"
-            href={"https://therafiali.vercel.app/"}
-          >
+          <Link target="_blank" href={"https://therafiali.vercel.app/"}>
             <Card
               src={portfolio}
               title="Portfolio Web"
@@ -76,10 +73,7 @@ const Projects = () => {
           </Link>
         </div>
         <div className="col-span-1">
-          <Link
-            target="_blank"
-            href={"https://todo-app-one-black.vercel.app/"}
-          >
+          <Link target="_blank" href={"https://todo-app-one-black.vercel.app/"}>
             <Card
               src={todo}
               title="Todo App"
