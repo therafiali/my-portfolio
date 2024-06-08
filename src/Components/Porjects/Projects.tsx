@@ -4,6 +4,8 @@ import dine from "@/assets/dinemarket.png";
 import first from "@/assets/first.png";
 import portfolio from "@/assets/portfolio.png";
 import todo from "@/assets/todo.png"
+import panaverse from "@/assets/panaverse.png"
+import gallery from "@/assets/gallery.png"
 import Image from "next/image";
 import { Card } from "./Card";
 import Link from "next/link";
@@ -84,6 +86,30 @@ const Projects = () => {
               src={todo}
               title="Todo App"
               link="https://todo-app-one-black.vercel.app/"
+            />
+          </Link>
+        </div>
+        <div className="col-span-1">
+          <Link
+            target="_blank"
+            href={"https://image-gallery-app-gamma.vercel.app/gallery"}
+          >
+            <Card
+              src={gallery}
+              title="Image Gallery App using Cloudinary API"
+              link="https://image-gallery-app-gamma.vercel.app/gallery"
+            />
+          </Link>
+        </div>
+        <div className="col-span-1">
+          <Link
+            target="_blank"
+            href={"https://panaverse-clone-theta.vercel.app/"}
+          >
+            <Card
+              src={panaverse}
+              title="Panaverse Simple web app"
+              link="https://panaverse-clone-theta.vercel.app/"
             />
           </Link>
         </div>
