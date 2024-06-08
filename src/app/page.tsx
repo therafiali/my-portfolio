@@ -1,4 +1,5 @@
 import About from "@/Components/About/About";
+import Form from "@/Components/Contact/Form";
 import Hero from "@/Components/Hero/Hero";
 import NavbarHeader from "@/Components/Navbar/Navbar";
 import Projects from "@/Components/Porjects/Projects";
@@ -15,6 +16,7 @@ const Home = () => {
       <Skills/>
       <Skillstree/>
       <Projects/>
+      <Form/>
  
       <NavbarHeader />
 
