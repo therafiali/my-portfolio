@@ -1,7 +1,10 @@
 "use client";
+import Image from "next/image";
 import React from "react";
+import GreenBlack from "@/assets/greenblack.svg";
 
 import { useEffect } from "react";
+import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
 
 const MyComponent = () => {
   useEffect(() => {
@@ -43,60 +46,71 @@ const MyComponent = () => {
 };
 
 const Form = () => {
+  let server = process.env.formKey;
   return (
     <>
       <MyComponent />
-      <div className="container">
-        <span className="big-circle" />
-        <img src="img/shape.png" className="square" alt="" />
+      <section id="contact" className="container">
+        {/* <span className="big-circle" />
+        <img src="img/shape.png" className="square" alt="" /> */}
         <div className="form">
-          <div className="contact-info">
-            <h3 className="title">Let's get in touch</h3>
-            <p className="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              dolorum adipisci recusandae praesentium dicta!
-            </p>
+          <div className="pricing__left">
+            <h3 className="title">Let&apos;s get in touch</h3>
+            <Image className="image-79" src={GreenBlack} alt="" />
+            <p className="text-white z-10">Fill out the form below <br/> or shoot me an email at therafiali@gmail.com</p>
             <div className="info">
               <div className="information">
                 <img src="img/location.png" className="icon" alt="" />
-                <p>92 Cherry Drive Uniondale, NY 11553</p>
+                <p>Karachi, Pakistan</p>
               </div>
               <div className="information">
                 <img src="img/email.png" className="icon" alt="" />
-                <p>lorem@ipsum.com</p>
+                <p>therafiali@gmail.com</p>
               </div>
               <div className="information">
                 <img src="img/phone.png" className="icon" alt="" />
-                <p>123-456-789</p>
+                <p>+923190269909</p>
+              </div>
+              <div className="flex gap-x-5 items-center">
+                <div className="bg-emerald-500  rounded-full flex flex-col items-center justify-center ml-2 mt-1">
+                  <p className="bg-[#1abc9c] w-3 h-3 rounded-full animate-ping  "></p>
+                </div>
+                <p className="text-xs text-white mt-1">Available Now</p>
               </div>
             </div>
             <div className="social-media">
-              <p>Connect with us :</p>
-              <div className="social-icons">
-                <a href="#">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-instagram" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-linkedin-in" />
-                </a>
+              <p className="text-white">Connect with us :</p>
+              <div className="flex gap-2 mt-2">
+                <Linkedin
+                  className="bg-custom-gradient p-1 rounded-sm "
+                  color="white"
+                  size={30}
+                />
+                <Github
+                  className="bg-custom-gradient p-1 rounded-sm "
+                  color="white"
+                  size={30}
+                />
+                <Twitter
+                  className="bg-custom-gradient p-1 rounded-sm"
+                  color="white"
+                  size={30}
+                />
+                <Facebook
+                  className="bg-custom-gradient p-1 rounded-sm"
+                  color="white"
+                  size={30}
+                />
               </div>
             </div>
           </div>
           <div className="contact-form">
-            <span className="circle one" />
-            <span className="circle two" />
-            <form action="index.html" autoComplete="off">
-              <h3 className="title">Contact us</h3>
+            <form action={server} autoComplete="off" method="POST">
+              <h3 className=" text-black">Contact us</h3>
               <div className="input-container">
                 <input type="text" name="name" className="input" />
-                <label htmlFor="">Username</label>
-                <span>Username</span>
+                <label htmlFor="">Name</label>
+                <span>Name</span>
               </div>
               <div className="input-container">
                 <input type="email" name="email" className="input" />
@@ -113,11 +127,15 @@ const Form = () => {
                 <label htmlFor="">Message</label>
                 <span>Message</span>
               </div>
-              <input type="submit" defaultValue="Send" className="btn" />
+              <div className="buttonjoy">
+                <div className="text-white  w-full h-full text-center text-xl">
+                  Drop a message
+                </div>
+              </div>
             </form>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
