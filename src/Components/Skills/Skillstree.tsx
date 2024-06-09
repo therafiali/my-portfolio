@@ -6,10 +6,10 @@ import python from "@/assets/python.png";
 const Skillstree = () => {
   return (
     <div className="flex ">
-      <div className="">
-        <Image src={js} alt="Javascript Based Skills" />
+      <div className="w-full h-full">
+        <Image  src={js} alt="Javascript Based Skills" />
       </div>
-      <div className="">
+      <div className="w-full h-full">
         <Image src={python} alt="Python Based Skills" />
       </div>
 

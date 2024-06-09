@@ -14,7 +14,6 @@ const Home = () => {
       <SliderSection />
       <About />
       <Skills />
-      <Skillstree />
       <Projects />
       <Form />
 <div className="pt-20 mt-10"></div>

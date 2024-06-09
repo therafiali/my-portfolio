@@ -45,8 +45,8 @@ const Projects = () => {
           </div>
         </h2>
       </section>
-      <div className="grid grid-cols-2">
-        <div className="col-span-1">
+      <div className="grid grid-cols-2  ">
+        <div className="col-span-1 border border-red-500 ">
           <Link
             target="_blank"
             href={"https://full-stack-ecommerce-clothing-web.vercel.app/"}
@@ -137,7 +137,7 @@ const Projects = () => {
           >
             <Card
               src={email}
-              title="Email Scraper - Python Selenium"
+              title="Email Scraper for Email Marketing - Python Selenium"
               link="https://bit.ly/therafialiscripts"
             />
           </Link>
