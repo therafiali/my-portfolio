@@ -5,6 +5,7 @@ import GreenBlack from "@/assets/greenblack.svg";
 
 import { useEffect } from "react";
 import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
+import { Button } from "@nextui-org/react";
 
 const MyComponent = () => {
   useEffect(() => {
@@ -128,9 +129,9 @@ const Form = () => {
                 <span>Message</span>
               </div>
               <div className="buttonjoy">
-                <div className="text-white  w-full h-full text-center text-xl">
+                <Button type="submit" className="text-white  w-full h-full text-center text-xl">
                   Drop a message
-                </div>
+                </Button>
               </div>
             </form>
           </div>
