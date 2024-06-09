@@ -14,7 +14,6 @@ import Image from "next/image";
 import { Card } from "./Card";
 import Link from "next/link";
 
-
 const Projects = () => {
   return (
     <div>
@@ -46,7 +45,7 @@ const Projects = () => {
         </h2>
       </section>
       <div className="grid grid-cols-2  ">
-        <div className="col-span-1 border border-red-500 ">
+        <div className="col-span-1 ">
           <Link
             target="_blank"
             href={"https://full-stack-ecommerce-clothing-web.vercel.app/"}

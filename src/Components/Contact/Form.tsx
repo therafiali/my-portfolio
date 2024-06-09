@@ -2,7 +2,9 @@
 import Image from "next/image";
 import React from "react";
 import GreenBlack from "@/assets/greenblack.svg";
-
+import pink from "@/assets/pinkyellow.svg";
+import blue from "@/assets/skyblue.svg";
+import line from "@/assets/roundline.svg";
 import { useEffect } from "react";
 import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@nextui-org/react";
@@ -50,8 +52,20 @@ const Form = () => {
   let server = process.env.formKey;
   return (
     <>
-      <MyComponent />
-      <section id="contact" className="container">
+      <MyComponent /> 
+      <section id="contact" className="container relative overflow-hidden mt-10">
+      <Image
+          className="absolute left-0 myDuration animate-bounce"
+          src={blue}
+          alt=""
+        />
+        <Image
+          className="absolute right-0 myDuration animate-bounce"
+          src={pink}
+          alt=""
+          height={150}
+          width={150}
+        />
         {/* <span className="big-circle" />
         <img src="img/shape.png" className="square" alt="" /> */}
         <div className="form">
