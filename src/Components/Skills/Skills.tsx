@@ -6,7 +6,7 @@ import Skillstree from "./Skillstree";
 const Skills = () => {
   return (
     <>
-      <section id="skills" className="pt-20 relative overflow-hidden">
+      <section id="skills" className="pt-20 relative">
         <Image
           className="absolute myDuration animate-bounce"
           src={Greenred}
