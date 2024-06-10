@@ -11,12 +11,12 @@ your next digital adventure.`;
   return (
     <section id="about" className="pt-20 relative overflow-hidden">
       <Image
-        className="absolute myDuration animate-bounce"
+        className="absolute myDuration "
         src={Greenred}
         alt=""
       />
       <Image
-        className="absolute right-0 myDuration animate-bounce"
+        className="absolute right-0 myDuration mt-10"
         src={Yellow}
         alt=""
         height={150}

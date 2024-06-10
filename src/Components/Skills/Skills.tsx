@@ -8,12 +8,12 @@ const Skills = () => {
     <>
       <section id="skills" className="pt-20 relative">
         <Image
-          className="absolute myDuration animate-bounce"
+          className="absolute myDuration mt-20"
           src={Greenred}
           alt=""
         />
         <Image
-          className="absolute right-0 myDuration animate-bounce"
+          className="absolute right-0 myDuration mt-20"
           src={Yellow}
           alt=""
           height={150}
