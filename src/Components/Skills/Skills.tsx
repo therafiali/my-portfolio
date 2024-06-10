@@ -1,5 +1,5 @@
 import Greenred from "@/assets/Blueyellow.svg";
-import Yellow from "@/assets/orange.svg";
+import Yellow from "@/assets/PYTHONMAN.svg";
 import Image from "next/image";
 import Skillstree from "./Skillstree";
 
@@ -16,8 +16,8 @@ const Skills = () => {
           className="absolute right-0 myDuration mt-20"
           src={Yellow}
           alt=""
-          height={150}
-          width={150}
+          height={300}
+          width={300}
         />
         <h2 className="flex  flex-col max-w-screen-md from-accent-foreground mx-auto scroll-m-20 text-2xl text-justify font-medium tracking-widest lg:text-2xl mt-14  leading-relaxed">
           <small className="text-sm font-medium leading-none text-center">

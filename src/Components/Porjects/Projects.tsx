@@ -1,5 +1,5 @@
-import Greenred from "@/assets/Blueyellow.svg";
-import Yellow from "@/assets/greenred.svg";
+import Greenred from "@/assets/pinksqaure.svg";
+import Yellow from "@/assets/yellowblack.svg";
 import dine from "@/assets/dinemarket.png";
 import first from "@/assets/first.png";
 import portfolio from "@/assets/portfolio.png";
@@ -27,8 +27,7 @@ const Projects = () => {
           className="absolute right-0 myDuration animate-bounce"
           src={Yellow}
           alt=""
-          height={150}
-          width={150}
+       
         />
         <h2 className="flex  flex-col max-w-screen-md from-accent-foreground mx-auto scroll-m-20 text-2xl text-justify font-medium tracking-widest lg:text-2xl mt-14 mb-28 leading-relaxed">
           <small className="text-sm font-medium leading-none text-center">
