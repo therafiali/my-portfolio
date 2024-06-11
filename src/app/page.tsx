@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <main className="bg-image ">
         {/* <Hero /> */}
-<ParallexSlider/>
+        <ParallexSlider />
         {/* <SliderSection /> */}
         <About />
         <Skills />
