@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section id="home" className="pt-20 ">
       <div>
-        <h1 className="flex  flex-col scroll-m-20 font-sans text-xl sm:text-4xl text-center font-bold sm:tracking-tight lg:text-7xl sm:mt-14 mb-28 leading-loose z-10">
+        <h1 className="flex  flex-col scroll-m-20 font-sans text-xl sm:text-4xl text-center font-bold sm:tracking-tight lg:text-7xl sm:mt-14 sm:mb-28 leading-loose z-10">
           <p className="z-10 text-black">
             {/* Turning <span className="text-[#5baff6]">Dreams</span> into{" "}
           <span className="text-[#ff7a5c]">Reality</span>{" "} */}
@@ -27,7 +27,7 @@ const Hero = () => {
       </div>
       <div className="relative ">
         <Image
-          className="absolute -top-52 w-16 h-16"
+          className="absolute -top-24 w-16 h-16"
           src={orange}
           alt=""
           height={200}
@@ -35,7 +35,7 @@ const Hero = () => {
           style={{ zIndex: 0 }} // Changed to 0
         />
         <Image
-          className="absolute right-0 -top-52 w-16 h-16"
+          className="absolute right-0 -top-24 w-16 h-16"
           src={BlueBall}
           alt=""
           height={200}
