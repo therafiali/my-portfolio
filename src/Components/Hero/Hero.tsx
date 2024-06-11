@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section id="home" className="pt-20 ">
       <div>
-        <h1 className="flex  flex-col scroll-m-20 font-sans text-xl sm:text-4xl text-center font-bold sm:tracking-tight lg:text-7xl sm:mt-14 sm:mb-28 leading-loose z-10">
+        <h1 className="flex  flex-col scroll-m-20 font-sans text-xl sm:text-4xl text-center font-bold sm:tracking-tight lg:text-7xl sm:mt-14 sm:mb-28 leading-loose z-">
           <p className="z-10 text-black">
             {/* Turning <span className="text-[#5baff6]">Dreams</span> into{" "}
           <span className="text-[#ff7a5c]">Reality</span>{" "} */}
@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="z-50 text-black">
             {/* <span className="text-[#f5bde8]">Problems</span> into{" "}
           <span className="text-[#23a093]"> Solutions.</span> */}
-            <p className="z-50 text-black">Problems into Solutions.</p>
+            <p className=" text-black">Problems into Solutions.</p>
           </div>
         </h1>
       </div>
@@ -32,7 +32,7 @@ const Hero = () => {
           alt=""
           height={200}
           width={200}
-          style={{ zIndex: 0 }} // Changed to 0
+          // style={{ zIndex: 0 }} // Changed to 0
         />
         <Image
           className="absolute right-0 -top-24 w-16 h-16"
@@ -40,7 +40,7 @@ const Hero = () => {
           alt=""
           height={200}
           width={200}
-          style={{ zIndex: 2 }} // Changed to 2
+          // style={{ zIndex: 2 }} // Changed to 2
         />
       </div>
     </section>

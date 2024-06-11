@@ -68,8 +68,8 @@ const Form = () => {
         />
         {/* <span className="big-circle" />
         <img src="img/shape.png" className="square" alt="" /> */}
-        <div className="form flex flex-col sm:flex-row">
-          <div className="pricing__left">
+        <div className="form flex flex-col sm:flex-row ">
+          <div className="pricing__left flex-1">
             <h3 className="title">Let&apos;s get in touch</h3>
             <Image className="image-79" src={GreenBlack} alt="" />
             <p className="text-white z-10">Fill out the form below <br/> or shoot me an email at therafiali@gmail.com</p>
@@ -119,7 +119,7 @@ const Form = () => {
               </div>
             </div>
           </div>
-          <div className="contact-form">
+          <div className="contact-form flex-1">
             <form action={server} autoComplete="off" method="POST">
               <h3 className=" text-black">Contact us</h3>
               <div className="input-container">

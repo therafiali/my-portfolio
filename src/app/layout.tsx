@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./Providers";
 import Logo from "@/Components/Logo/Logo";
 import Wrapper from "@/Components/Wrapper/Wrapper";
+import Footer from "@/Components/Footer/Footer";
 
 const inter = Montserrat({
   subsets: ["cyrillic"],
@@ -27,6 +28,9 @@ export default function RootLayout({
         <Wrapper>
           <Providers>{children}</Providers>
         </Wrapper>
+        <div className="">
+        <Footer />
+      </div>
       </body>
     </html>
   );

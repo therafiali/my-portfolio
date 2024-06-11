@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import Link from "next/link";
+import { Home, Phone, SquareUserRound } from "lucide-react";
 
 export default function NavbarHeader() {
   useEffect(() => {
@@ -31,19 +32,58 @@ export default function NavbarHeader() {
   }, []);
   return (
     <div>
-      <div className="fixed z-100  pb-8 px-8 bottom-0 left-0 right-0 bg-transparent">
+      <div className="fixed z-40  pb-8 sm:px-8 bottom-0 left-0 right-0 bg-transparent">
         <div className="flex justify-center">
           <div className="shadow-nav bg-gradient-to-r from-black to-gray-800 border border-black rounded-full flex items-stretch px-[6px] shadow-md p-2 ">
             <nav className="flex">
-              <a href="#home" className="active flex items-center justify-center tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right border-red- text-white  rounded-[60px] px-2 py-4 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]">Home </a>
-              <a href="#about" className=" flex items-center justify-center  tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right  text-white  rounded-[60px] px-2 py-4 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]">About</a>
-              <a href="#skills" className=" flex items-center justify-center  tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right  text-white  rounded-[60px] px-2 py-4 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]">Skills</a>
-              <a href="#portfolio" className=" flex items-center justify-center  tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right  text-white  rounded-[60px] px-2 py-4 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]">Portfolio</a>
-              <a href="#contact" className=" flex items-center justify-center tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right  text-white  rounded-[60px] px-2 py-4 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]">Contact</a>
+            
+                <a
+                  href="#home"
+                  className="active hidden xs:flex items-center justify-center tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right border-red- text-white  rounded-[60px] px-1 py-2 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]"
+                >
+                  Home
+                </a>
+                <a
+                  href="#home"
+                  className=" xs:hidden flex items-center justify-center tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right border-red- text-white  rounded-[60px] px-1 py-2 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]"
+                >
+                  <Home />
+                </a>
+             
+              <a
+                href="#about"
+                className=" flex items-center justify-center  tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right  text-white  rounded-[60px] px-1 py-2 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]"
+              >
+                About
+              </a>
+              <a
+                href="#skills"
+                className=" flex items-center justify-center  tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right  text-white  rounded-[60px] px-1 py-2 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]"
+              >
+                Skills
+              </a>
+              <a
+                href="#portfolio"
+                className=" flex items-center justify-center  tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right  text-white  rounded-[60px] px-1 py-2 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]"
+              >
+                Portfolio
+              </a>
+              <a
+                href="#contact"
+                className=" hidden xs:flex items-center justify-center tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right  text-white  rounded-[60px] px-1 py-2 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]"
+              >
+                Contact
+              </a>
+              <a
+                href="#contact"
+                className="xs:hidden flex items-center justify-center tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right  text-white  rounded-[60px] px-1 py-2 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]"
+              >
+                <SquareUserRound />
+              </a>
             </nav>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
   );
 }

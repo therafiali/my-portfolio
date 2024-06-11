@@ -6,24 +6,24 @@ import NavbarHeader from "@/Components/Navbar/Navbar";
 import Projects from "@/Components/Projects/Projects";
 import Skills from "@/Components/Skills/Skills";
 import Skillstree from "@/Components/Skills/Skillstree";
+import { ParallexSlider } from "@/Components/Slider/ParallexSlider";
 import SliderSection from "@/Components/Slider/SliderSection";
 
 const Home = () => {
   return (
     <>
-      <main className="bg-image">
-        <Hero />
-        <SliderSection />
+      <main className="bg-image ">
+        {/* <Hero /> */}
+<ParallexSlider/>
+        {/* <SliderSection /> */}
         <About />
         <Skills />
         <Projects />
         <Form />
-        <div className="pt-20 mt-10"></div>
+        <div className=" pt-20 mt-10"></div>
+
         <NavbarHeader />
       </main>
-      <div className="">
-        <Footer />
-      </div>
     </>
   );
 };
