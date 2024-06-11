@@ -68,7 +68,7 @@ const Form = () => {
         />
         {/* <span className="big-circle" />
         <img src="img/shape.png" className="square" alt="" /> */}
-        <div className="form">
+        <div className="form flex flex-col sm:flex-row">
           <div className="pricing__left">
             <h3 className="title">Let&apos;s get in touch</h3>
             <Image className="image-79" src={GreenBlack} alt="" />
