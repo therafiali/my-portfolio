@@ -42,7 +42,7 @@ export default function SliderSection() {
   return (
     <div className="content-wrapper overflow-hidden ">
       {/* Your component content */}
-      <div className="your-text-wrapper-class flex justify-center items-center h-screen space-x-4 md:ml[50rem]">
+      <div className="your-text-wrapper-class flex justify-center items-center mt-8 sm:mt-0 w-36 h-40 sm:h-screen sm:space-x-4 md:ml[50rem]">
         {/* Your text content */}
         <Image
           className="border rounded-lg"
