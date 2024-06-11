@@ -17,10 +17,11 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #000000;
   .text-vw {
     font-size: 10vw;
   }
+  
 }
 @layer base {
   :root {
