@@ -13,7 +13,13 @@ const Home = () => {
   return (
     <>
       <main className="bg-image ">
+<<<<<<< HEAD
         <ParallexSlider />
+=======
+        {/* <Hero /> */}
+        <ParallexSlider />
+        {/* <SliderSection /> */}
+>>>>>>> 185523ee6da6f9b844e0ed38c157bbdc4918379a
         <About />
         <Skills />
         <Projects />

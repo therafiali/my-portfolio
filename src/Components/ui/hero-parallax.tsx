@@ -58,7 +58,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[200vh] sm:h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -112,13 +112,13 @@ export const Header = () => {
         <h1 className="text-2xl md:text-7xl font-bold dark:text-white z-50">
           Problems into Solutions.
         </h1>
-        <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 z-50 bg-gray-50/50F forhero:bg-none">
+        <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 z-50 bg-gray-50/50 forhero:bg-none">
           We build beautiful products with the latest technologies and
           frameworks. We are a team of passionate developers that love to build
           amazing products.
         </p>
       </div>
-      <Image className="absolute -right-10 top-52  -z-0" src={BlueBall} alt="" />
+      <Image className="absolute -right-10 top-52  -z-0 " src={BlueBall} alt="" />
     </div>
   );
 };
