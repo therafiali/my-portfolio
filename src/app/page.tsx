@@ -13,15 +13,12 @@ const Home = () => {
   return (
     <>
       <main className="bg-image ">
-        {/* <Hero /> */}
-<ParallexSlider/>
-        {/* <SliderSection /> */}
+        <ParallexSlider />
         <About />
         <Skills />
         <Projects />
         <Form />
         <div className=" pt-20 mt-10"></div>
-
         <NavbarHeader />
       </main>
     </>
