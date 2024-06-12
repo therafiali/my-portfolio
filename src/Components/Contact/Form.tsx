@@ -8,6 +8,7 @@ import line from "@/assets/roundline.svg";
 import { useEffect } from "react";
 import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@nextui-org/react";
+import { ContactForm } from "./ContactForm";
 
 const MyComponent = () => {
   useEffect(() => {
@@ -49,7 +50,6 @@ const MyComponent = () => {
 };
 
 const Form = () => {
-  let server = process.env.formKey;
   return (
     <>
       <MyComponent />
@@ -74,7 +74,7 @@ const Form = () => {
             <Image className="image-79" src={GreenBlack} alt="" />
             <p className="text-white z-10 max-w-[18rem]">
               Fill out the form below or shoot me an email at{" "}
-              <span className="text-teal-300" >therafiali@gmail.com</span>
+              <span className="text-teal-300">therafiali@gmail.com</span>
             </p>
             <div className="info">
               <div className="information">
@@ -122,7 +122,8 @@ const Form = () => {
               </div>
             </div>
           </div>
-          <div className="contact-form flex-1">
+
+          {/* <div className="contact-form flex-1">
             <form action={server} autoComplete="off" method="POST">
               <h3 className=" text-black">Contact us</h3>
               <div className="input-container">
@@ -155,6 +156,9 @@ const Form = () => {
                 </Button>
               </div>
             </form>
+          </div> */}
+          <div className="flex-1">
+            <ContactForm />
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import About from "@/Components/About/About";
+import { ContactForm } from "@/Components/Contact/ContactForm";
 import Form from "@/Components/Contact/Form";
 import NavbarHeader from "@/Components/Navbar/Navbar";
 import Projects from "@/Components/Projects/Projects";
@@ -15,6 +16,7 @@ const Home = () => {
         <Skills />
         <Projects />
         <Form />
+        {/* <ContactForm/> */}
         <div className=" pt-20 mt-10"></div>
         <NavbarHeader />
       </main>

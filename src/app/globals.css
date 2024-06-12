@@ -194,12 +194,12 @@ nav a.active {
   left: -13px;
 }
 
-form {
+/* form {
   padding: 1.3rem 2.2rem;
   z-index: 10;
   overflow: hidden;
   position: relative;
-}
+} */
 
 .title {
   color: #fff;
@@ -467,10 +467,10 @@ textarea.input {
     display: none;
   } */
 
-  form,
+  /* form,
   .contact-info {
     padding: 1.7rem 1.6rem;
-  }
+  } */
 
   .text,
   .information,
