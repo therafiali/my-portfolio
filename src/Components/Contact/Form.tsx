@@ -124,7 +124,7 @@ const Form = () => {
           </div>
 
           {/* <div className="contact-form flex-1">
-            <form action={server} autoComplete="off" method="POST">
+            {/* <form action={server} autoComplete="off" method="POST">
               <h3 className=" text-black">Contact us</h3>
               <div className="input-container">
                 <input type="text" name="name" className="input" />
@@ -155,10 +155,10 @@ const Form = () => {
                   Drop a message
                 </Button>
               </div>
-            </form>
-          </div> */}
+            </form> */}
+          {/* </div>  */}
           <div className="flex-1">
-            <ContactForm />
+             <ContactForm />
           </div>
         </div>
       </section>

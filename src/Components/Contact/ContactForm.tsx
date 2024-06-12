@@ -11,6 +11,7 @@ import {
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { Textarea } from "../ui/textarea";
+import { Button } from "@nextui-org/react";
 
 export function ContactForm() {
   let server = process.env.formKey;
@@ -24,25 +25,44 @@ export function ContactForm() {
         Contact me
       </h2>
 
-      <form action={server} className="" onSubmit={handleSubmit}>
+      <form action={server} method="POST">
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="firstname">Full Name</Label>
-            <Input id="firstname" placeholder="Rafi Ali" type="text" />
+            <Input
+              name="firstname"
+              id="firstname"
+              placeholder="Rafi Ali"
+              type="text"
+            />
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="therafiali@gmail.com" type="email" />
+          <Input
+            name="email"
+            id="email"
+            placeholder="therafiali@gmail.com"
+            type="email"
+          />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="phone">Phone</Label>
-          <Input id="phone" placeholder="+92 319 026 9909" type="tel" />
+          <Input
+            name="phone"
+            id="phone"
+            placeholder="+92 319 026 9909"
+            type="tel"
+          />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="message">Message</Label>
-          
-          <Textarea placeholder="Type your message here." id="message" />
+
+          <Textarea
+            name="message"
+            placeholder="Type your message here."
+            id="message"
+          />
         </LabelInputContainer>
 
         <button
