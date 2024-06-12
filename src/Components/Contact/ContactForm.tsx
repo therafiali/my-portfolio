@@ -1,17 +1,9 @@
 "use client";
 import React from "react";
-
 import { cn } from "@/lib/utils";
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
-
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { Textarea } from "../ui/textarea";
-import { Button } from "@nextui-org/react";
 
 export function ContactForm() {
   let server = process.env.formKey;
