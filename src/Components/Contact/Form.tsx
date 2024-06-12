@@ -52,15 +52,15 @@ const Form = () => {
   let server = process.env.formKey;
   return (
     <>
-      <MyComponent /> 
-      <section id="contact" className="container relative overflow-hidden mt-10">
-      <Image
-          className="absolute left-0 myDuration animate-bounce"
+      <MyComponent />
+      <section id="contact" className="relative overflow-hidden mt-10 ">
+        <Image
+          className="absolute left-0 top-10 myDuration animate-bounce "
           src={blue}
           alt=""
         />
         <Image
-          className="absolute right-0 myDuration animate-bounce"
+          className="absolute right-0 top-14 myDuration animate-bounce "
           src={pink}
           alt=""
           height={150}
@@ -68,11 +68,14 @@ const Form = () => {
         />
         {/* <span className="big-circle" />
         <img src="img/shape.png" className="square" alt="" /> */}
-        <div className="form flex flex-col sm:flex-row ">
+        <div className="form flex flex-col sm:flex-row w-full mx-auto ">
           <div className="pricing__left flex-1">
             <h3 className="title">Let&apos;s get in touch</h3>
             <Image className="image-79" src={GreenBlack} alt="" />
-            <p className="text-white z-10">Fill out the form below <br/> or shoot me an email at therafiali@gmail.com</p>
+            <p className="text-white z-10 max-w-[18rem]">
+              Fill out the form below or shoot me an email at{" "}
+              <span className="text-teal-300" >therafiali@gmail.com</span>
+            </p>
             <div className="info">
               <div className="information">
                 <img src="img/location.png" className="icon" alt="" />
@@ -143,7 +146,10 @@ const Form = () => {
                 <span>Message</span>
               </div>
               <div className="buttonjoy">
-                <Button type="submit" className="text-white  w-full h-full text-center text-xl">
+                <Button
+                  type="submit"
+                  className="text-white  w-full h-full text-center text-xl"
+                >
                   Drop a message
                 </Button>
               </div>

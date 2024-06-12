@@ -28,7 +28,7 @@ your next digital adventure.`;
         <div className="mx-auto py-8" >
           <button className="btn text-center  ">
             About me
-            <div className="badge">
+            <div className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"

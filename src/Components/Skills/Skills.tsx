@@ -20,7 +20,27 @@ const Skills = () => {
           height={300}
           width={300}
         />
-        <h2 className="scroll-m-20  sm:text-4xl font-extrabold tracking-tight lg:text-5xl text-center ">Skills</h2>
+        <div className=" py-8 text-center" >
+          <button className="btn text-center  ">
+            Skills
+            <div className="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
         <div className="flex  flex-col max-w-screen-md from-accent-foreground mx-auto scroll-m-20 text-2xl text-justify font-medium tracking-widest lg:text-2xl  leading-relaxed ">
           <small className="mt-2 sm:mt-0 text-sm font-medium leading-none text-center">
             Jim Rohn said it
