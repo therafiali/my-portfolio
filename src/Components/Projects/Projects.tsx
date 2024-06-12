@@ -18,16 +18,16 @@ const Projects = () => {
   return (
     <div>
       <section id="portfolio" className="sm:pt-20 relative overflow-hidden">
-        {/* <Image
-          className="absolute myDuration animate-bounce"
+        <Image
+          className="absolute hidden xs:block  w-20 h-20 xs:w-0 xs:h-0 "
           src={Greenred}
           alt=""
         />
         <Image
-          className="absolute right-0 myDuration animate-bounce"
+          className="absolute right-0 hidden xs:block  w-20 h-20 xs:w-0 xs:h-0 "
           src={Yellow}
           alt=""
-        /> */}
+        />
           <div className=" py-8 text-center" >
           <button className="btn text-center  ">
             Projects
@@ -53,12 +53,12 @@ const Projects = () => {
           <small className="mt-2 sm:mt-0 px-2 sm:px-0 font-sans text-sm font-medium leading-none text-center">
             A portfolio is more than a collection of projects,
           </small>
-          <div className="mx-auto mt-2 sm:mt-0 flex flex-col items-center text-lg ">
+          <div className="mx-auto mt-4 sm:mt-0 flex flex-col items-center text-lg ">
             <blockquote className="sm:mt-6 border-l-2 sm:pl-6 italic text-center">
-              “ it&apos;s a showcase of progress, what you&apos;ve learned,
+              <span className="text-4xl text-yellow-950 font-serif">“</span> it&apos;s a showcase of progress, what you&apos;ve learned,
             </blockquote>
             <blockquote className="sm:mt-6 border-l-2 sm:pl-6 italic text-center">
-              and your plans for what comes next.”
+              and your plans for what comes next. <span className="text-4xl text-yellow-950 font-serif"> ”</span>
             </blockquote>
           </div>
         </h2>

@@ -55,12 +55,12 @@ const Form = () => {
       <MyComponent />
       <section id="contact" className="relative overflow-hidden mt-10 ">
         <Image
-          className="absolute left-0 top-10 myDuration animate-bounce "
+          className="absolute  hidden xs:block  left-0 top-10 myDuration animate-bounce "
           src={blue}
           alt=""
         />
         <Image
-          className="absolute right-0 top-14 myDuration animate-bounce "
+          className="absolute  hidden xs:block  right-0 top-14 myDuration animate-bounce "
           src={pink}
           alt=""
           height={150}
@@ -131,7 +131,8 @@ const Form = () => {
                 <span>Name</span>
               </div>
               <div className="input-container">
-                <input type="email" name="email" className="input" />
+                <input type="email" name="email" className="input 
+                " />
                 <label htmlFor="">Email</label>
                 <span>Email</span>
               </div>
@@ -140,7 +141,7 @@ const Form = () => {
                 <label htmlFor="">Phone</label>
                 <span>Phone</span>
               </div>
-              <div className="input-container textarea">
+              <div className="input-container textarea ">
                 <textarea name="message" className="input" defaultValue={""} />
                 <label htmlFor="">Message</label>
                 <span>Message</span>

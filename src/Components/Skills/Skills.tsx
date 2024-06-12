@@ -6,20 +6,9 @@ import Skillstree from "./Skillstree";
 const Skills = () => {
   return (
     <>
-      <section id="skills" className="sm:pt-20 relative mt-16 sm:mt-14 ">
+      <section id="skills" className="sm:pt-20 mt-16 sm:mt-14 ">
         
-        <Image
-          className="absolute top-32 sm:top-0 mt-20 w-16 h-16"
-          src={Greenred}
-          alt=""
-        />
-        <Image
-          className="absolute right-0 top-[19rem] sm:top-0 mt-20 w-20 h-w-20"
-          src={Yellow}
-          alt=""
-          height={300}
-          width={300}
-        />
+      
         <div className=" py-8 text-center" >
           <button className="btn text-center  ">
             Skills

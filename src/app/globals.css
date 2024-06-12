@@ -21,6 +21,7 @@ body {
   .text-vw {
     font-size: 10vw;
   }
+  background: white;
   
 }
 @layer base {
