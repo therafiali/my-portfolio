@@ -13,6 +13,7 @@ import autoresponder from "@/assets/autoresponder.jpg";
 import Image from "next/image";
 import { Card } from "./Card";
 import Link from "next/link";
+import { BlackCard } from "./BlackCard";
 
 const Projects = () => {
   return (
@@ -65,7 +66,7 @@ const Projects = () => {
           </div>
         </h2>
       </section>
-      <div className="grid grid-cols-1 sm:grid-cols-2 px-2 sm:px-0 ">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 px-2 sm:px-0 ">
         <div className="col-span-1 ">
           <Link
             target="_blank"
@@ -174,7 +175,8 @@ const Projects = () => {
             />
           </Link>
         </div>
-      </div>
+      </div> */}
+      <BlackCard/>
     </div>
   );
 };
