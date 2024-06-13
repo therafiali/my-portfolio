@@ -1,8 +1,12 @@
-'use client';
+"use client";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import { BottomGradient } from "./ButtomGradient";
+import { Eye, Github } from "lucide-react";
+import Image, { StaticImageData } from "next/image";
+import dine from "@/assets/dinemarket.png";
 
 export const HoverEffect = ({
   items,
@@ -10,8 +14,10 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
-    description: string;
     link: string;
+    skills: string[];
+    code : string;
+    image : string | StaticImageData
   }[];
   className?: string;
 }) => {
@@ -50,8 +56,52 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
+            <Image src={item.image} alt=""/>
             <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
+            <div className="flex space-x-2 mt-2">
+              <button
+                className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+                type="submit"
+              >
+                <Link
+                  className="flex items-center justify-center space-x-1"
+                  href={item.link}
+                >
+                  <p>Demo</p>
+                  <Eye size={16} />
+                </Link>
+
+                <BottomGradient />
+              </button>
+              <button
+                className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+                type="submit"
+              >
+                <Link
+                  className="flex items-center justify-center space-x-1"
+                  href={item.code}
+                >
+                  <p>Code</p>
+                  <Github size={16} />
+                </Link>
+
+                <BottomGradient />
+              </button>
+            </div>
+            {/* <CardDescription>{item.description}</CardDescription> */}
+            <h3 className="scroll-m-20 text-base mt-2 tracking-tight text-white">
+              Tech Stack
+            </h3>
+            <div className="mt-2 flex gap-2 flex-wrap">
+              {item.skills.map((item, idx) => (
+                <button key={idx} className="p-[3px] relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                  <div className="px-2 py-1  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                    {item}
+                  </div>
+                </button>
+              ))}
+            </div>
           </Card>
         </Link>
       ))}
@@ -102,7 +152,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm",
         className
       )}
     >

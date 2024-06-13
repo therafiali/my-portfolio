@@ -13,11 +13,11 @@ const Home = () => {
     <>
       <main className="bg-image ">
         <ParallexSlider />
-        <About />
         <BlackCard/>
+        {/* <About />
         <Skills />
         <Projects />
-        <Form />
+        <Form /> */}
         {/* <ContactForm/> */}
         <div className=" pt-20 mt-10"></div>
         <NavbarHeader />

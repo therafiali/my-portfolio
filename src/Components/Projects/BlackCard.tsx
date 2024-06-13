@@ -1,4 +1,16 @@
 import { HoverEffect } from "../ui/card-hover-effect";
+import Greenred from "@/assets/pinksqaure.svg";
+import Yellow from "@/assets/yellowblack.svg";
+import dine from "@/assets/dinemarket.png";
+import first from "@/assets/first.png";
+import portfolio from "@/assets/portfolio.png";
+import todo from "@/assets/todo.png";
+import panaverse from "@/assets/panaverse.png";
+import gallery from "@/assets/gallery.png";
+import chatbot from "@/assets/chatbot.jpg";
+import fastapi from "@/assets/fastapi.jpg";
+import email from "@/assets/email.jpg";
+import autoresponder from "@/assets/autoresponder.jpg";
 
 export function BlackCard() {
   return (
@@ -9,39 +21,83 @@ export function BlackCard() {
 }
 export const projects = [
   {
-    title: "Stripe",
-    description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+    image: dine,
+    title: "Ecommerce Web App",
+
+    link: "https://full-stack-ecommerce-clothing-web.vercel.app/",
+    skills: ["Nextjs", "React", "Javasript", "Typescript"],
+    code: "",
   },
   {
-    title: "Netflix",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+    image: first,
+    title: "Simple Portfolio Web",
+
+    link: "https://first-portfolio-three.vercel.app/",
+    skills: ["Nextjs", "React", "Javasript", "Typescript"],
+    code: "",
   },
   {
-    title: "Google",
-    description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+    image: portfolio,
+    title: "Portfolio Web",
+
+    link: "https://therafiali.vercel.app/",
+    skills: ["Nextjs", "React", "Javasript", "Typescript"],
+    code: "",
   },
   {
-    title: "Meta",
-    description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+    image: todo,
+    title: "Todo App",
+
+    link: "https://todo-app-one-black.vercel.app/",
+    skills: ["Nextjs", "React", "Javasript", "Typescript"],
+    code: "",
   },
   {
-    title: "Amazon",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+    image: gallery,
+    title: "Image Gallery App using Cloudinary API",
+
+    link: "https://image-gallery-app-gamma.vercel.app/gallery",
+    skills: ["Nextjs", "React", "Javasript", "Typescript"],
+    code: "",
   },
   {
-    title: "Microsoft",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+    image: panaverse,
+    title: "Panaverse Simple web app",
+
+    link: "https://panaverse-clone-theta.vercel.app/",
+    skills: ["Nextjs", "React", "Javasript", "Typescript"],
+    code: "",
+  },
+  {
+    image: chatbot,
+    title: "OpenAI Based BookStore Chatbot",
+
+    link: "http://bit.ly/therafialigenerativeai",
+    skills: ["Nextjs", "React", "Javasript", "Typescript"],
+    code: "",
+  },
+  {
+    image: fastapi,
+    title: "Crud Operations in FASTAPI - Python",
+
+    link: "https://bit.ly/therafialiapi",
+    skills: ["Nextjs", "React", "Javasript", "Typescript"],
+    code: "",
+  },
+  {
+    image: email,
+    title: "Email Scraper for Email Marketing - Python Selenium",
+
+    link: "https://bit.ly/therafialiapi",
+    skills: ["Nextjs", "React", "Javasript", "Typescript"],
+    code: "",
+  },
+  {
+    image: autoresponder,
+    title: "Whatsapp Autoresponder for Server Monitoring - Python",
+
+    link: "https://www.youtube.com/shorts/KzrXvj7wBsQ",
+    skills: ["Nextjs", "React", "Javasript", "Typescript"],
+    code: "",
   },
 ];

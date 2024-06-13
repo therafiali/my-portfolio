@@ -28,7 +28,7 @@ const Projects = () => {
           src={Yellow}
           alt=""
         />
-          <div className=" py-8 text-center" >
+        <div className=" py-8 text-center">
           <button className="btn text-center  ">
             Projects
             <div className="">
@@ -55,10 +55,12 @@ const Projects = () => {
           </small>
           <div className="mx-auto mt-4 sm:mt-0 flex flex-col items-center text-lg ">
             <blockquote className="sm:mt-6 border-l-2 sm:pl-6 italic text-center">
-              <span className="text-4xl text-yellow-400 font-serif">“</span> it&apos;s a showcase of progress, what you&apos;ve learned,
+              <span className="text-4xl text-yellow-400 font-serif">“</span>{" "}
+              it&apos;s a showcase of progress, what you&apos;ve learned,
             </blockquote>
             <blockquote className="sm:mt-6 border-l-2 sm:pl-6 italic text-center">
-              and your plans for what comes next. <span className="text-4xl text-yellow-400 font-serif"> ”</span>
+              and your plans for what comes next.{" "}
+              <span className="text-4xl text-yellow-400 font-serif"> ”</span>
             </blockquote>
           </div>
         </h2>
