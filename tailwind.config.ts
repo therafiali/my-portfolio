@@ -19,6 +19,7 @@ const config = {
   theme: {
     screens: {
       'xs': '440px',
+
 'forhero': '580px',
       'sm': '640px',
       // => @media (min-width: 640px) { ... }

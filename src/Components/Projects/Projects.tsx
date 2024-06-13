@@ -54,7 +54,7 @@ const Projects = () => {
           <small className="mt-2 sm:mt-0 px-2 sm:px-0 font-sans text-sm font-medium leading-none text-center">
             A portfolio is more than a collection of projects,
           </small>
-          <div className="mx-auto mt-4 sm:mt-0 flex flex-col items-center text-lg ">
+          <div className="mx-auto mt-4 sm:mt-0 flex flex-col items-center text-lg max-w-sm ">
             <blockquote className="sm:mt-6 border-l-2 sm:pl-6 italic text-center">
               <span className="text-4xl text-yellow-400 font-serif">“</span>{" "}
               it&apos;s a showcase of progress, what you&apos;ve learned,
