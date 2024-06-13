@@ -48,6 +48,7 @@ export function ContactForm() {
             type="tel"
           />
         </LabelInputContainer>
+       
         <LabelInputContainer className="mb-4">
           <Label htmlFor="message">Message</Label>
 
@@ -69,8 +70,6 @@ export function ContactForm() {
     </div>
   );
 }
-
-
 
 const LabelInputContainer = ({
   children,
