@@ -53,14 +53,14 @@ const Form = () => {
   return (
     <>
       <MyComponent />
-      <section id="contact" className="relative overflow-hidden mt-10 ">
+      <section id="contact" className="relative overflow-hidden mt-10 mx-auto">
         <Image
-          className="absolute  hidden xs:block  left-0 top-10 myDuration animate-bounce "
+          className="absolute  hidden sm:block  left-0 top-10 myDuration animate-bounce "
           src={blue}
           alt=""
         />
         <Image
-          className="absolute  hidden xs:block  right-0 top-14 myDuration animate-bounce "
+          className="absolute  hidden sm:block  right-0 top-14 myDuration animate-bounce "
           src={pink}
           alt=""
           height={150}
@@ -68,8 +68,8 @@ const Form = () => {
         />
         {/* <span className="big-circle" />
         <img src="img/shape.png" className="square" alt="" /> */}
-        <div className="form flex flex-col sm:flex-row w-full mx-auto ">
-          <div className="pricing__left flex-1">
+        <div className="form flex justify-center items-center flex-col sm:flex-row w-full mx-auto ">
+          <div className="pricing__left flex-1 w-full">
             <h3 className="title">Let&apos;s get in touch</h3>
             <Image className="image-79" src={GreenBlack} alt="" />
             <p className="text-white z-10 max-w-[18rem]">
@@ -157,7 +157,7 @@ const Form = () => {
               </div>
             </form> */}
           {/* </div>  */}
-          <div className="flex-1">
+          <div className="flex-1 w-full">
              <ContactForm />
           </div>
         </div>

@@ -13,7 +13,7 @@ export function ContactForm() {
     console.log("Form submitted");
   };
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-6 shadow-input bg-white dark:bg-black">
+    <div className="rounded-md max-w-[30rem] w-full mx-auto sm:rounded-none md:rounded-2xl p-4 md:p-6 shadow-input bg-white dark:bg-black">
       <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
         Contact me
       </h2>
