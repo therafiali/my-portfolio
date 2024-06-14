@@ -18,7 +18,7 @@ import { BlackCard } from "./BlackCard";
 const Projects = () => {
   return (
     <div>
-      <section id="portfolio" className="sm:pt-20 relative overflow-hidden">
+      <section id="portfolio" className="md:pt-20 relative overflow-hidden">
         <Image
           className="absolute hidden xs:block  w-20 h-20 xs:w-0 xs:h-0 "
           src={Greenred}

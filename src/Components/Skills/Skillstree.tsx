@@ -7,16 +7,16 @@ import Yellow from "@/assets/PYTHONMAN.svg";
 
 const Skillstree = () => {
   return (
-    <div className="flex flex-col sm:flex-row">
+    <div className="flex flex-col md:flex-row">
       <div className="relative  w-full h-full ">
         <Image
-          className="absolute top-0 sm:top-0 mt-20 w-16 h-16"
+          className="absolute top-0  mt-20 w-16 h-16 sm:w-28 sm:h-28"
           src={Greenred}
           alt=""
         />
         <Image src={js} alt="Javascript Based Skills" />
       </div>
-      <div className="relative -mt-[101px] sm:mt-0 w-full h-full">
+      <div className="relative -mt-[101px] md:mt-0 w-full h-full">
         <Image
           className="absolute right-0 top-0 sm:top-0 mt-20 w-20 h-w-20"
           src={Yellow}

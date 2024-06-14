@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 
-
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 const {
@@ -18,28 +17,27 @@ const config = {
   prefix: "",
   theme: {
     screens: {
-      'xs': '440px',
+      xs: "440px",
 
-'forhero': '580px',
-      'sm': '640px',
+      forhero: "580px",
+      sm: "640px",
       // => @media (min-width: 640px) { ... }
 
-      'md': '768px',
+      md: "768px",
       // => @media (min-width: 768px) { ... }
-
-      'lg': '1024px',
+      nine: "900px",
+      lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1280px',
+      xl: "1280px",
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1536px',
+      "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
     container: {
       center: true,
       padding: "2rem",
-     
     },
     extend: {
       boxShadow: {
@@ -106,7 +104,11 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"),require("daisyui"),addVariablesForColors],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("daisyui"),
+    addVariablesForColors,
+  ],
 } satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {
@@ -114,7 +116,7 @@ function addVariablesForColors({ addBase, theme }: any) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });

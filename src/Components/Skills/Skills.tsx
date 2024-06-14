@@ -6,7 +6,7 @@ import Skillstree from "./Skillstree";
 const Skills = () => {
   return (
     <>
-      <section id="skills" className="sm:pt-20 mt-16 sm:mt-14 ">
+      <section id="skills" className=" mt-16 sm:mt-14 ">
         
       
         <div className=" py-8 text-center" >
@@ -30,7 +30,7 @@ const Skills = () => {
             </div>
           </button>
         </div>
-        <div className="flex  flex-col max-w-screen-md from-accent-foreground mx-auto scroll-m-20 text-2xl text-justify font-medium tracking-widest lg:text-2xl  leading-relaxed ">
+        <div className="flex  flex-col max-w-screen-md from-accent-foreground mx-auto scroll-m-20 text-2xl text-justify font-medium tracking-widest lg:text-2xl  leading-relaxed p-4">
           <small className="mt-2 sm:mt-0 text-sm font-medium leading-none text-center">
             Jim Rohn said it
           </small>

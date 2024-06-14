@@ -68,8 +68,8 @@ const Form = () => {
         />
         {/* <span className="big-circle" />
         <img src="img/shape.png" className="square" alt="" /> */}
-        <div className="form flex justify-center items-center flex-col sm:flex-row w-full mx-auto ">
-          <div className="pricing__left flex-1 w-full">
+        <div className="form flex justify-center items-center flex-col nine:flex-row w-full h-full mx-auto ">
+          <div className="pricing__left flex-1 w-full h-[75vh]">
             <h3 className="title">Let&apos;s get in touch</h3>
             <Image className="image-79" src={GreenBlack} alt="" />
             <p className="text-white z-10 max-w-[18rem]">

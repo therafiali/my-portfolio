@@ -11,10 +11,10 @@ your next digital adventure.`;
   return (
     <section
       id="about"
-      className="mt-0 sm:pt-20 relative overflow-hidden sm:mt-14 sm:mb-28  "
+      className="mt-0 sm: relative overflow-hidden   "
     >
       <div className="hidden sm:flex  ">
-        <Image className="absolute myDuration  " src={Greenred} alt="" />
+        <Image className="absolute top-0 myDuration  " src={Greenred} alt="" />
         <Image
           className="absolute right-0 myDuration mt-10"
           src={Yellow}
@@ -46,7 +46,7 @@ your next digital adventure.`;
             </div>
           </button>
         </div>
-        <p>{about}</p>
+        <p className="sm:text-xl px-2 text-center z-50 py-2" >{about}</p>
       </div>
     </section>
   );
