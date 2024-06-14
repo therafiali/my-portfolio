@@ -76,7 +76,7 @@ const Form = () => {
               Fill out the form below or shoot me an email at{" "}
               <span className="text-teal-300">therafiali@gmail.com</span>
             </p>
-            <div className="info">
+            <div className="info mt-4">
               <div className="information">
                 <img src="img/location.png" className="icon" alt="" />
                 <p>Karachi, Pakistan</p>
@@ -157,8 +157,8 @@ const Form = () => {
               </div>
             </form> */}
           {/* </div>  */}
-          <div className="flex-1 w-full">
-             <ContactForm />
+          <div className="flex-1 w-full h-full">
+            <ContactForm />
           </div>
         </div>
       </section>
