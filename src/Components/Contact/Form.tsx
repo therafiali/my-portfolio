@@ -66,8 +66,8 @@ const Form = () => {
           height={150}
           width={150}
         />
-        <div className="form flex justify-center items-center flex-col nine:flex-row w-full h-full mx-auto border border-red-500">
-          <div className="pricing__left flx w-full min-h-[300px]  border border-yellow-500">
+        <div className="form flex justify-center items-center flex-col nine:flex-row w-full h-full mx-auto ">
+          <div className="pricing__left flx w-full min-h-[300px]  ">
             <h3 className="title">Let&apos;s get in touch</h3>
             <Image className="image-79" src={GreenBlack} alt="" />
             <p className="text-white z-10 max-w-[18rem] mt-4">
@@ -120,7 +120,7 @@ const Form = () => {
               </div>
             </div>
           </div>
-          <div className="flx w-full min-h-[300px] border border-red-500">
+          <div className="flx w-full min-h-[300px] ">
             <ContactForm />
           </div>
         </div>
