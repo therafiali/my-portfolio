@@ -66,17 +66,15 @@ const Form = () => {
           height={150}
           width={150}
         />
-        {/* <span className="big-circle" />
-        <img src="img/shape.png" className="square" alt="" /> */}
-        <div className="form flex justify-center items-center flex-col nine:flex-row w-full h-full mx-auto ">
-          <div className="pricing__left flex-1 w-full h-[75vh]">
+        <div className="form flex justify-center items-center flex-col nine:flex-row w-full h-full mx-auto border border-red-500">
+          <div className="pricing__left flx w-full min-h-[300px]  border border-yellow-500">
             <h3 className="title">Let&apos;s get in touch</h3>
             <Image className="image-79" src={GreenBlack} alt="" />
-            <p className="text-white z-10 max-w-[18rem]">
+            <p className="text-white z-10 max-w-[18rem] mt-4">
               Fill out the form below or shoot me an email at{" "}
               <span className="text-teal-300">therafiali@gmail.com</span>
             </p>
-            <div className="info mt-4">
+            <div className="info mt-16">
               <div className="information">
                 <img src="img/location.png" className="icon" alt="" />
                 <p>Karachi, Pakistan</p>
@@ -96,7 +94,7 @@ const Form = () => {
                 <p className="text-xs text-white mt-1">Available Now</p>
               </div>
             </div>
-            <div className="social-media">
+            <div className="social-media mt-8">
               <p className="text-white">Connect with us :</p>
               <div className="flex gap-2 mt-2">
                 <Linkedin
@@ -122,42 +120,7 @@ const Form = () => {
               </div>
             </div>
           </div>
-
-          {/* <div className="contact-form flex-1">
-            {/* <form action={server} autoComplete="off" method="POST">
-              <h3 className=" text-black">Contact us</h3>
-              <div className="input-container">
-                <input type="text" name="name" className="input" />
-                <label htmlFor="">Name</label>
-                <span>Name</span>
-              </div>
-              <div className="input-container">
-                <input type="email" name="email" className="input 
-                " />
-                <label htmlFor="">Email</label>
-                <span>Email</span>
-              </div>
-              <div className="input-container">
-                <input type="tel" name="phone" className="input" />
-                <label htmlFor="">Phone</label>
-                <span>Phone</span>
-              </div>
-              <div className="input-container textarea ">
-                <textarea name="message" className="input" defaultValue={""} />
-                <label htmlFor="">Message</label>
-                <span>Message</span>
-              </div>
-              <div className="buttonjoy">
-                <Button
-                  type="submit"
-                  className="text-white  w-full h-full text-center text-xl"
-                >
-                  Drop a message
-                </Button>
-              </div>
-            </form> */}
-          {/* </div>  */}
-          <div className="flex-1 w-full h-full">
+          <div className="flx w-full min-h-[300px] border border-red-500">
             <ContactForm />
           </div>
         </div>
