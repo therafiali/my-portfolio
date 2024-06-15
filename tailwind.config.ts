@@ -19,6 +19,7 @@ const config = {
     screens: {
       xs: "440px",
 
+      fiveforty: "540px",
       forhero: "580px",
       sm: "640px",
       // => @media (min-width: 640px) { ... }

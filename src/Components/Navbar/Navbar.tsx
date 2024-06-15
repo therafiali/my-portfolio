@@ -32,10 +32,10 @@ export default function NavbarHeader() {
   }, []);
   return (
     <div>
-      <div className="fixed z-40  pb-8 sm:px-8 bottom-0 left-0 right-0 bg-transparent">
+      <div className="fixed z-40  pb-8 sm:px-8 bottom-0 left-0 right-0 bg-transparent mx-2 xs:mx-8 fiveforty:mx-14 forhero:mx-20">
         <div className="flex justify-center">
-          <div className="shadow-nav bg-gradient-to-r from-black to-gray-800 border border-black rounded-full flex items-stretch px-[6px] shadow-md p-2 ">
-            <nav className="flex">
+          <div className="shadow-nav bg-gradient-to-r from-black to-gray-800 border border-black rounded-full flex items-stretch px-[6px] shadow-md p-2 w-full sm:w-auto justify-evenly forhero:px-4">
+            <nav className="flex justify-evenly  w-full sm:w-auto">
             
                 <a
                   href="#home"
