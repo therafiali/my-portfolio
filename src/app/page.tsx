@@ -1,4 +1,5 @@
 import About from "@/Components/About/About";
+import Bio from "@/Components/About/Bio";
 import { ContactForm } from "@/Components/Contact/ContactForm";
 import Form from "@/Components/Contact/Form";
 import NavbarHeader from "@/Components/Navbar/Navbar";
@@ -10,6 +11,7 @@ const Home = () => {
   return (
     <>
       <main className="bg-image ">
+        {/* <Bio/> */}
         <ParallexSlider />
         <About />
         <Skills />
