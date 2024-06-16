@@ -44,7 +44,7 @@ your next digital adventure.`;
             </div>
           </button>
         </div>
-        <p className="sm:text-xl px-2 text-center z-50 py-2">{about}</p>
+        <p className="sm:text-xl px-2 text-center z-20 py-2">{about}</p>
       </div>
       <div className="mt-4 sm:mt-8">
         <Bio />

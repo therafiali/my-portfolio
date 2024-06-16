@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/assets/therafiali.svg";
+import logo from "@/assets/rafialinew.png";
 import logo1 from "@/assets/giphy.gif";
 import Link from "next/link";
 
