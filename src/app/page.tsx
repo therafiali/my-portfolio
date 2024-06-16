@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <main className="bg-image ">
-        {/* <Bio/> */}
+       
         <ParallexSlider />
         <About />
         <Skills />
