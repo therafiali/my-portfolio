@@ -12,7 +12,7 @@ const Logo = () => {
           src={logo}
           width={150}
           height={150}
-          alt="Rafi Ali"
+          alt="Rafi Ali" 
         />
 
         <Image
