@@ -98,22 +98,22 @@ const Form = () => {
               <p className="text-white">Connect with us :</p>
               <div className="flex gap-2 mt-2">
                 <Linkedin
-                  className="bg-custom-gradient p-1 rounded-sm "
+                  className="bg-custom-gradient p-1 rounded-sm cursor-pointer "
                   color="white"
                   size={30}
                 />
                 <Github
-                  className="bg-custom-gradient p-1 rounded-sm "
+                  className="bg-custom-gradient p-1 rounded-sm cursor-pointer "
                   color="white"
                   size={30}
                 />
                 <Twitter
-                  className="bg-custom-gradient p-1 rounded-sm"
+                  className="bg-custom-gradient p-1 rounded-sm cursor-pointer"
                   color="white"
                   size={30}
                 />
                 <Facebook
-                  className="bg-custom-gradient p-1 rounded-sm"
+                  className="bg-custom-gradient p-1 rounded-sm cursor-pointer"
                   color="white"
                   size={30}
                 />

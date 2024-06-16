@@ -50,9 +50,9 @@ export const projects = [
     image: portfolio,
     title: "Portfolio Web",
 
-    link: "https://therafiali.vercel.app/",
+    link: "https://rafiali.vercel.app/",
     skills: ["Nextjs", "React", "Javasript", "Typescript", "Tailwind CSS"],
-    code: "https://github.com/therafiali/my-portfolio",
+    code: "https://github.com/therafiali/My_Portfolio",
   },
   {
     image: todo,

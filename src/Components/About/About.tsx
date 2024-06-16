@@ -24,7 +24,7 @@ your next digital adventure.`;
 
       <div className="flex  flex-col max-w-screen-md from-accent-foreground mx-auto scroll-m-20 px-2 text-center sm:px-0 sm:text-2xl sm:text-justify font-medium tracking-widest lg:text-2xl  leading-relaxed mt-16">
         <div className="mx-auto py-8">
-          <button className="btn text-center  ">
+          <button className="btn text-center shade ">
             About me
             <div className="">
               <svg

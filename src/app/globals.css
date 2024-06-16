@@ -16,13 +16,16 @@
   }
 }
 
+span h1 h2 h3 h4 h5 h6 {
+  cursor: pointer;
+}
+
 body {
   color: #000000;
   .text-vw {
     font-size: 10vw;
   }
   background: white;
-  
 }
 @layer base {
   :root {
@@ -553,22 +556,27 @@ textarea.input {
 
 /* bio */
 
-
 .logo-marquee__wrapper {
   outline-offset: 0px;
   perspective-origin: 50%;
   transform-origin: 0%;
   background-color: #000;
-  background-image: linear-gradient(#000,#292929);
+  background-image: linear-gradient(#000, #292929);
   border-radius: 1000px;
   outline: 1px solid #000;
-  box-shadow: 1px 9px 12px rgba(0,0,0,.31),0 20px 13px rgba(0,0,0,.14),inset 0 2px 1px rgba(255,255,255,.5)
+  box-shadow: 1px 9px 12px rgba(0, 0, 0, 0.31), 0 20px 13px rgba(0, 0, 0, 0.14),
+    inset 0 2px 1px rgba(255, 255, 255, 0.5);
 }
 
-@layer utilities{
+@layer utilities {
   .paused {
     animation-play-state: paused;
   }
 }
 
 /* bio  end */
+
+.shade {
+  box-shadow: 1px 9px 12px rgba(0, 0, 0, 0.31), 0 20px 13px rgba(0, 0, 0, 0.14),
+    inset 0 2px 1px rgba(255, 255, 255, 0.5);
+}
