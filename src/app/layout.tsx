@@ -14,6 +14,7 @@ const inter = Montserrat({
 export const metadata: Metadata = {
   title: "Rafi Ali - Software Engineer",
   description: "I am Gen AI , Cloud Native & Full Stack Developer",
+  icons: './favicon.ico'
 };
 
 export default function RootLayout({

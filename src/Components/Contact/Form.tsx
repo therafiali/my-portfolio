@@ -66,15 +66,15 @@ const Form = () => {
           height={150}
           width={150}
         />
-        <div className="form flex justify-center items-center flex-col nine:flex-row w-full h-full mx-auto ">
+        <div className="form flex justify-center items-center flex-col nine:flex-row w-full h-full mx-auto px-4 sm:px-0 ">
           <div className="pricing__left flx w-full min-h-[300px]  ">
             <h3 className="title">Let&apos;s get in touch</h3>
             <Image className="image-79" src={GreenBlack} alt="" />
-            <p className="text-white z-10 max-w-[18rem] mt-4">
+            <p className="text-white z-10  max-w-[18rem] nine:mt-4">
               Fill out the form below or shoot me an email at{" "}
               <span className="text-teal-300">therafiali@gmail.com</span>
             </p>
-            <div className="info mt-16">
+            <div className="info nine:mt-16">
               <div className="information">
                 <img src="img/location.png" className="icon" alt="" />
                 <p>Karachi, Pakistan</p>
@@ -96,7 +96,7 @@ const Form = () => {
             </div>
             <div className="social-media mt-8">
               <p className="text-white">Connect with us :</p>
-              <div className="flex gap-2 mt-2">
+              <div className="flex gap-2 nine:mt-2">
                 <Linkedin
                   className="bg-custom-gradient p-1 rounded-sm cursor-pointer "
                   color="white"
