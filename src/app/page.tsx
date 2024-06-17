@@ -1,6 +1,7 @@
 import About from "@/Components/About/About";
 import Bio from "@/Components/About/Bio";
 import { ContactForm } from "@/Components/Contact/ContactForm";
+import { Contacthighlight } from "@/Components/Contact/Contacthighlight";
 import Form from "@/Components/Contact/Form";
 import NavbarHeader from "@/Components/Navbar/Navbar";
 import Projects from "@/Components/Projects/Projects";
@@ -11,7 +12,6 @@ const Home = () => {
   return (
     <>
       <main className="bg-image ">
-       
         <ParallexSlider />
         <About />
         <Skills />

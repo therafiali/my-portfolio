@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@nextui-org/react";
 import { ContactForm } from "./ContactForm";
+import { Contacthighlight } from "./Contacthighlight";
 
 const MyComponent = () => {
   useEffect(() => {
@@ -36,6 +37,9 @@ const MyComponent = () => {
       input.addEventListener("focus", focusFunc as EventListener);
       input.addEventListener("blur", blurFunc as EventListener);
     });
+    
+   
+    
 
     // Cleanup listeners on component unmount
     return () => {
@@ -53,7 +57,7 @@ const Form = () => {
   return (
     <>
       <MyComponent />
-      <section id="contact" className="relative overflow-hidden mt-10 mx-auto">
+      <section id="contact" className="relative overflow-hidden mt-10 mx-auto   ">
         <Image
           className="absolute  hidden sm:block  left-0 top-10 myDuration animate-bounce "
           src={blue}
@@ -72,7 +76,7 @@ const Form = () => {
             <Image className="image-79" src={GreenBlack} alt="" />
             <p className="text-white z-10  max-w-[18rem] nine:mt-4">
               Fill out the form below or shoot me an email at{" "}
-              <span className="text-teal-300">therafiali@gmail.com</span>
+             <Contacthighlight/>
             </p>
             <div className="info nine:mt-16">
               <div className="information">

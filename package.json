@@ -21,6 +21,7 @@
     "gsap": "^3.12.5",
     "locomotive-scroll": "^4.1.4",
     "lucide-react": "^0.379.0",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.3",
     "nextui-cli": "^0.2.1",
     "react": "^18",
