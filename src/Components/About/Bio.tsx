@@ -5,8 +5,8 @@ import Image from "next/image";
 const Bio = () => {
   let bioArr = [
     "Wordpress Developer",
-    "Full Stack Nextjs Developer",
-    "Generative AI Developer",
+    "Nextjs Developer",
+    "Gen AI Developer",
     "Frontend Developer",
     "Python Developer",
     "Problem Solver",
