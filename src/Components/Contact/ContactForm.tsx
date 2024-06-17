@@ -21,7 +21,7 @@ export function ContactForm() {
   };
   const emailSend = async () => {
     try {
-      const res = await fetch("/email/sen", {
+      const res = await fetch("https://therafiali.vercel.app/email/send", {
         method: "POST",
         body: JSON.stringify({
           useremail: email,
