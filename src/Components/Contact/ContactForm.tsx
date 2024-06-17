@@ -3,15 +3,13 @@ import { cn } from "@/lib/utils";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { Textarea } from "../ui/textarea";
-import { BottomGradient } from "../ui/ButtomGradient";
 import React, { useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
 import { ToasterApp } from "../ui/toaster";
 
 export function ContactForm() {
   let subject = "Email From therafiali portfolio website"
   const [toaststatus, setToaststatus] = useState(false);
-  const [toastmsg, setToastmsg] = useState("");
+  const [toastmsg, setToastmsg] = useState("Email not sent");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setphone] = useState("");
