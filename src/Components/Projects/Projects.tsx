@@ -15,6 +15,7 @@ import { Card } from "./Card";
 import Link from "next/link";
 import { BlackCard } from "./BlackCard";
 import { Trophy } from "lucide-react";
+import { Projecttext } from "./Projecttext";
 
 const Projects = () => {
   return (
@@ -48,8 +49,7 @@ const Projects = () => {
                 “
               </span>{" "}
               <p>
-                it&apos;s a showcase of progress, what you&apos;ve learned, and
-                your plans for what comes next.
+               <Projecttext/>
               </p>
               <span className="flex justify-end text-4xl text-yellow-400 font-serif text-end">
                 {" "}

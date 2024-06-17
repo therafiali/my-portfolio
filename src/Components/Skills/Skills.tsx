@@ -3,18 +3,20 @@ import Yellow from "@/assets/PYTHONMAN.svg";
 import Image from "next/image";
 import Skillstree from "./Skillstree";
 import { PencilRuler } from "lucide-react";
+import { TextGenerateEffect } from "../ui/text-generate-effect";
+import { Skillstext } from "./Skillstext";
+
 
 const Skills = () => {
+
   return (
     <>
       <section id="skills" className=" mt-16 sm:mt-14 ">
-        
-      
-        <div className=" py-8 text-center" >
+        <div className=" py-8 text-center">
           <button className="btn text-center shade  ">
             Skills
             <div className="">
-            <PencilRuler />
+              <PencilRuler />
             </div>
           </button>
         </div>
@@ -22,7 +24,7 @@ const Skills = () => {
           <small className="mt-2 sm:mt-0 text-sm font-medium leading-none text-center">
             Jim Rohn said it
           </small>
-          <div className="mx-auto mt-2 sm:mt-0 flex flex-col items-center text-lg text-center max-w-sm">
+          <div className="mx-auto mt-2 sm:mt-0 flex flex-col items-center text-lg text-center max-w-md">
             {/* <blockquote className="sm:mt-6 border-l-2 sm:pl-6 italic ">
               “Don&apos;t wish for less problems;
             </blockquote>
@@ -30,12 +32,14 @@ const Skills = () => {
               wish for more skills.”
             </blockquote> */}
             <blockquote className="sm:mt-6 border-l-2 sm:pl-6 italic text-center">
-              <span className="flex justify-start text-4xl text-yellow-400 font-serif text-start w-full">“</span>{" "}
-              <p>
-              Don&apos;t wish for less problems;
-              wish for more skills.
-              </p>
-              <span className="flex justify-end text-4xl text-yellow-400 font-serif text-end"> ”</span>
+              <span className="flex justify-start text-4xl text-yellow-400 font-serif text-start w-full">
+                “
+              </span>
+              <p><Skillstext/></p>
+              <span className="flex justify-end text-4xl text-yellow-400 font-serif text-end">
+                {" "}
+                ”
+              </span>
             </blockquote>
           </div>
         </div>

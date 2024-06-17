@@ -8,6 +8,7 @@ import Projects from "@/Components/Projects/Projects";
 import Skills from "@/Components/Skills/Skills";
 import { ParallexSlider } from "@/Components/Slider/ParallexSlider";
 
+
 const Home = () => {
   return (
     <>
