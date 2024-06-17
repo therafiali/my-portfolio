@@ -9,7 +9,6 @@ export function AboutText() {
   create innovative platforms that adapt and grow. Let's collaborate on
   your next digital adventure.`;
   const [isScroll, setIsScroll] = useState(0);
-  console.log(isScroll)
   useEffect(() => {
     function handleScroll() {
       let pos = document.documentElement.scrollTop;
