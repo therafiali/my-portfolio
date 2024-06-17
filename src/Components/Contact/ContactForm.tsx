@@ -9,7 +9,7 @@ import { ToasterApp } from "../ui/toaster";
 export function ContactForm() {
   let subject = "Email From therafiali portfolio website"
   const [toaststatus, setToaststatus] = useState(false);
-  const [toastmsg, setToastmsg] = useState("Email not sent");
+  const [toastmsg, setToastmsg] = useState("Please Wait");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setphone] = useState("");
@@ -40,7 +40,7 @@ export function ContactForm() {
         window.location.href=`mailto:therafiali@gmail.com?subject=${subject}&body=Hey its ${name}, ${msg}`
       }
     } catch (error) {
-      console.log("error");
+      console.log("error in email sending");
     }
   };
 
