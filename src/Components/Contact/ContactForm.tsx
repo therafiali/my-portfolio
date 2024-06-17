@@ -10,7 +10,6 @@ export function ContactForm() {
   let server = process.env.formKey;
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted");
   };
   return (
     <div className="rounded-md max-w-[30rem] w-full mx-auto sm:rounded-none md:rounded-2xl p-4 md:p-6 shadow-input bg-white dark:bg-black relative">

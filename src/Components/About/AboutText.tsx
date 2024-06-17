@@ -2,9 +2,14 @@
 import React, { useEffect, useState } from "react";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 
-export function Projecttext() {
-  const word = `It's a showcase of progress, what you've learned, and your plans for what comes next.`;
+export function AboutText() {
+  const word = `I'm a passionate developer who thrives on building smart solutions
+  across the digital landscape. Websites, tools, scripts, APIs, and even
+  generative AI-powered chatbots, I leverage cloud-native technologies to
+  create innovative platforms that adapt and grow. Let's collaborate on
+  your next digital adventure.`;
   const [isScroll, setIsScroll] = useState(0);
+  console.log(isScroll)
   useEffect(() => {
     function handleScroll() {
       let pos = document.documentElement.scrollTop;
@@ -23,14 +28,13 @@ export function Projecttext() {
     <>
     <div className="flex sm:hidden">
 
-    {isScroll >= 25 && <TextGenerateEffect words={word} />}
+    {isScroll >= 7 && <TextGenerateEffect words={word} />}
     </div>
     <div className="hidden sm:flex">
 
-    {isScroll >= 45 && <TextGenerateEffect words={word} />}
+    {isScroll >= 22 && <TextGenerateEffect words={word} />}
     </div>
    
   </>
   )
-  
 }

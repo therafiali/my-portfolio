@@ -16,6 +16,7 @@ import Link from "next/link";
 import { BlackCard } from "./BlackCard";
 import { Trophy } from "lucide-react";
 import { Projecttext } from "./Projecttext";
+import { TextHighlighter } from "../ui/TextHighlighter";
 
 const Projects = () => {
   return (
@@ -35,13 +36,17 @@ const Projects = () => {
           <button className="btn text-center shade  ">
             Projects
             <div className="">
-            <Trophy />
+              <Trophy />
             </div>
           </button>
         </div>
         <h2 className="flex  flex-col max-w-screen-md from-accent-foreground mx-auto scroll-m-20 text-2xl text-justify font-medium tracking-widest lg:text-2xl sm:mt-14  sm:mb-28 leading-relaxed">
-          <small className="mt-2 sm:mt-0 px-2 sm:px-0 font-sans text-sm font-medium leading-none text-center">
-            A portfolio is more than a collection of projects,
+          <small className="mt-2 sm:mt-0 px-2 sm:px-0 font-sans text-sm font-medium leading-none text-center mx-auto">
+            <TextHighlighter
+              text=" A portfolio is more than a collection of projects,"
+              scrollsm={23}
+              scrolllg={44}
+            />
           </small>
           <div className="mx-auto mt-4 sm:mt-0 flex flex-col items-center text-lg max-w-sm ">
             <blockquote className="sm:mt-6 border-l-2 sm:pl-6 italic text-center">
@@ -49,7 +54,7 @@ const Projects = () => {
                 “
               </span>{" "}
               <p>
-               <Projecttext/>
+                <Projecttext />
               </p>
               <span className="flex justify-end text-4xl text-yellow-400 font-serif text-end">
                 {" "}

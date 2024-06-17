@@ -2,6 +2,7 @@ import Greenred from "@/assets/greenred.svg";
 import Yellow from "@/assets/Yellow.png";
 import Image from "next/image";
 import Bio from "./Bio";
+import { AboutText } from "./AboutText";
 
 const About = () => {
   let about = `I'm a passionate developer who thrives on building smart solutions
@@ -44,7 +45,9 @@ your next digital adventure.`;
             </div>
           </button>
         </div>
-        <p className="sm:text-xl px-2 text-center z-20 py-2">{about}</p>
+        <p className="sm:text-xl px-2 text-center z-20 py-2">
+          <AboutText />
+        </p>
       </div>
       <div className="mt-4 sm:mt-8">
         <Bio />

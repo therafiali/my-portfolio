@@ -1,9 +1,17 @@
 "use client";
+import { Highlight } from "@/Components/ui/hero-highlight";
 import React, { useEffect, useState } from "react";
-import { TextGenerateEffect } from "../ui/text-generate-effect";
+import { TextHighlighterDemo } from "./text-highligher";
 
-export function Projecttext() {
-  const word = `It's a showcase of progress, what you've learned, and your plans for what comes next.`;
+export function TextHighlighter({
+  scrollsm,
+  scrolllg,
+  text,
+}: {
+  scrollsm: number;
+  scrolllg: number;
+  text: string;
+}) {
   const [isScroll, setIsScroll] = useState(0);
   useEffect(() => {
     function handleScroll() {
@@ -23,14 +31,13 @@ export function Projecttext() {
     <>
     <div className="flex sm:hidden">
 
-    {isScroll >= 25 && <TextGenerateEffect words={word} />}
+    {isScroll >= scrollsm && <TextHighlighterDemo>{text}</TextHighlighterDemo>}
     </div>
     <div className="hidden sm:flex">
 
-    {isScroll >= 45 && <TextGenerateEffect words={word} />}
+    {isScroll >= scrolllg && <TextHighlighterDemo>{text}</TextHighlighterDemo>}
     </div>
    
   </>
   )
-  
 }
