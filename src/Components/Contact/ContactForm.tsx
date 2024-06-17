@@ -9,6 +9,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { ToasterApp } from "../ui/toaster";
 
 export function ContactForm() {
+  let subject = "Email From therafiali portfolio website"
   const [toaststatus, setToaststatus] = useState(false);
   const [toastmsg, setToastmsg] = useState("");
   const [name, setName] = useState("");
@@ -38,6 +39,7 @@ export function ContactForm() {
       } else {
         setToastmsg("Email not sent");
         console.error("Error sending email:", res.status);
+        window.location.href=`mailto:therafiali@gmail.com?subject=${subject}&body=Hey its ${name}, ${msg}`
       }
     } catch (error) {
       console.log("error");
