@@ -37,9 +37,6 @@ const MyComponent = () => {
       input.addEventListener("focus", focusFunc as EventListener);
       input.addEventListener("blur", blurFunc as EventListener);
     });
-    
-   
-    
 
     // Cleanup listeners on component unmount
     return () => {
@@ -57,7 +54,7 @@ const Form = () => {
   return (
     <>
       <MyComponent />
-      <section id="contact" className="relative overflow-hidden mt-10 mx-auto   ">
+      <section className="relative overflow-hidden mt-10 mx-auto   ">
         <Image
           className="absolute  hidden sm:block  left-0 top-10 myDuration animate-bounce "
           src={blue}
@@ -70,13 +67,15 @@ const Form = () => {
           height={150}
           width={150}
         />
-        <div className="form flex justify-center items-center flex-col nine:flex-row w-full h-full mx-auto px-4 sm:px-0 ">
-          <div className="pricing__left flx w-full min-h-[300px]  ">
-            <h3 className="title">Let&apos;s get in touch</h3>
+        <section className="form flex justify-center items-center flex-col nine:flex-row w-full h-full mx-auto px-4 sm:px-0 ">
+          <section className="pricing__left flx w-full min-h-[300px]  ">
+            <section id="contact" className="title">
+              Let&apos;s get in touch
+            </section>
             <Image className="image-79" src={GreenBlack} alt="" />
             <p className="text-white z-10  max-w-[18rem] nine:mt-4">
               Fill out the form below or shoot me an email at{" "}
-             <Contacthighlight/>
+              <Contacthighlight />
             </p>
             <div className="info nine:mt-16">
               <div className="information">
@@ -123,11 +122,11 @@ const Form = () => {
                 />
               </div>
             </div>
-          </div>
+          </section>
           <div className="flx w-full min-h-[300px] ">
             <ContactForm />
           </div>
-        </div>
+        </section>
       </section>
     </>
   );
