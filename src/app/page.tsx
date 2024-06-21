@@ -9,12 +9,13 @@ import Skills from "@/Components/Skills/Skills";
 import { ParallexSlider } from "@/Components/Slider/ParallexSlider";
 import { ToasterApp } from "@/Components/ui/toaster";
 
-
 const Home = () => {
   return (
     <>
       <main className="bg-image ">
-        <ParallexSlider />
+        <section id="home">
+          <ParallexSlider />
+        </section>
         <About />
         <Skills />
         <Projects />
@@ -22,7 +23,6 @@ const Home = () => {
         <div className=" pt-20 mt-10"></div>
         <NavbarHeader />
       </main>
-    
     </>
   );
 };

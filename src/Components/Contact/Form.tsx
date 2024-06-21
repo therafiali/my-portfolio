@@ -68,7 +68,7 @@ const Form = () => {
           width={150}
         />
         <section className="form flex justify-center items-center flex-col nine:flex-row w-full h-full mx-auto px-4 sm:px-0 ">
-          <section className="pricing__left flx w-full min-h-[300px]  ">
+          <section  className="pricing__left flx w-full min-h-[300px]  ">
             <section id="contact" className="title">
               Let&apos;s get in touch
             </section>
@@ -77,7 +77,7 @@ const Form = () => {
               Fill out the form below or shoot me an email at{" "}
               <Contacthighlight />
             </p>
-            <div className="info nine:mt-16">
+            <section id="contact" className="info nine:mt-16">
               <div className="information">
                 <img src="img/location.png" className="icon" alt="" />
                 <p>Karachi, Pakistan</p>
@@ -96,7 +96,7 @@ const Form = () => {
                 </div>
                 <p className="text-xs text-white mt-1">Available Now</p>
               </div>
-            </div>
+            </section>
             <div className="social-media mt-8">
               <p className="text-white">Connect with us :</p>
               <div className="flex gap-2 nine:mt-2">

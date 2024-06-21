@@ -104,7 +104,7 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <section id="home" className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
+    <section  className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <div className="absolute z-50">
         <h1 className=" text-2xl sm:text-4xl md:text-7xl font-bold dark:text-white z-50">
           Turning Dreams into Reality
