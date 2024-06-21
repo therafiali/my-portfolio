@@ -18,12 +18,12 @@ export default function NavbarHeader() {
 
         if (top >= offset && top < offset + height) {
           navLinks.forEach((links) => {
-            links.classList.remove("active");
+            links.classList.remove("highlight");
             const targetLink = document.querySelector(
               "nav a[href*=" + id + "]"
             );
             if (targetLink) {
-              targetLink.classList.add("active");
+              targetLink.classList.add("highlight");
             }
           });
         }
@@ -39,13 +39,13 @@ export default function NavbarHeader() {
             
                 <a
                   href="#home"
-                  className="hidden active xs:flex items-center justify-center tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right border-red- text-white  rounded-[60px] px-1 py-2 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]"
+                  className="hidden highlight xs:flex items-center justify-center tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right border-red- text-white  rounded-[60px] px-1 py-2 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]"
                 >
                   Home
                 </a>
                 <Link
                   href="/"
-                  className="active xs:hidden flex items-center justify-center tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right border-red- text-white  rounded-[60px] px-1 py-2 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]"
+                  className="highlight xs:hidden flex items-center justify-center tracking-wider text-left [&[align=center]]:text-center [&[align=right]]:text-right border-red- text-white  rounded-[60px] px-1 py-2 sm:px-6 sm:py-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 hover:text-gray-900 hover:bg-yellow-400 duration-200 hover:translate-x-[2px]"
                 >
                   <Home />
                 </Link>
