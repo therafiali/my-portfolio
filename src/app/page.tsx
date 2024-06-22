@@ -3,6 +3,7 @@ import Bio from "@/Components/About/Bio";
 import { ContactForm } from "@/Components/Contact/ContactForm";
 import { Contacthighlight } from "@/Components/Contact/Contacthighlight";
 import Form from "@/Components/Contact/Form";
+import Logo from "@/Components/Logo/Logo";
 import NavbarHeader from "@/Components/Navbar/Navbar";
 import Projects from "@/Components/Projects/Projects";
 import Skills from "@/Components/Skills/Skills";
@@ -13,13 +14,17 @@ const Home = () => {
   return (
     <>
       <main className="bg-image ">
-        <section id="home">
+        <section className="" id="home">
           <ParallexSlider />
         </section>
-        <About />
+        <section className="">
+          <About />
+        </section>
         <Skills />
         <Projects />
-        <Form />
+        <section id="contact">
+          <Form />
+        </section>
         <div className=" pt-20 mt-10"></div>
         <NavbarHeader />
       </main>

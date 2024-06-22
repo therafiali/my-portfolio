@@ -10,6 +10,7 @@ import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@nextui-org/react";
 import { ContactForm } from "./ContactForm";
 import { Contacthighlight } from "./Contacthighlight";
+import Link from "next/link";
 
 const MyComponent = () => {
   useEffect(() => {
@@ -54,7 +55,7 @@ const Form = () => {
   return (
     <>
       <MyComponent />
-      <section className="relative overflow-hidden mt-10 mx-auto   ">
+      <div className="relative overflow-hidden mt-10 mx-auto   ">
         <Image
           className="absolute  hidden sm:block  left-0 top-10 myDuration animate-bounce "
           src={blue}
@@ -67,17 +68,17 @@ const Form = () => {
           height={150}
           width={150}
         />
-        <section className="form flex justify-center items-center flex-col nine:flex-row w-full h-full mx-auto px-4 sm:px-0 ">
-          <section  className="pricing__left flx w-full min-h-[300px]  ">
-            <section id="contact" className="title">
+        <div className="form flex justify-center items-center flex-col nine:flex-row w-full h-full mx-auto px-4 sm:px-0 ">
+          <div  className="pricing__left flx w-full min-h-[300px]  ">
+            <div id="" className="title">
               Let&apos;s get in touch
-            </section>
+            </div>
             <Image className="image-79" src={GreenBlack} alt="" />
             <p className="text-white z-10  max-w-[18rem] nine:mt-4">
               Fill out the form below or shoot me an email at{" "}
               <Contacthighlight />
             </p>
-            <section id="contact" className="info nine:mt-16">
+            <div id="" className="info nine:mt-16">
               <div className="information">
                 <img src="img/location.png" className="icon" alt="" />
                 <p>Karachi, Pakistan</p>
@@ -96,38 +97,45 @@ const Form = () => {
                 </div>
                 <p className="text-xs text-white mt-1">Available Now</p>
               </div>
-            </section>
+            </div>
             <div className="social-media mt-8">
               <p className="text-white">Connect with us :</p>
               <div className="flex gap-2 nine:mt-2">
+                <Link target="_blank" href={"https://www.linkedin.com/in/therafiali/"} >
                 <Linkedin
                   className="bg-custom-gradient p-1 rounded-sm cursor-pointer "
                   color="white"
                   size={30}
-                />
+                /></Link>
+                <Link target="_blank" href={"https://github.com/therafiali"} >
                 <Github
                   className="bg-custom-gradient p-1 rounded-sm cursor-pointer "
                   color="white"
                   size={30}
                 />
+                </Link>
+                <Link target="_blank" href={"https://twitter.com/therafiali"} >
                 <Twitter
                   className="bg-custom-gradient p-1 rounded-sm cursor-pointer"
                   color="white"
                   size={30}
                 />
+                </Link>
+                <Link target="_blank" href={"https://www.facebook.com/therafiali/"} >
                 <Facebook
                   className="bg-custom-gradient p-1 rounded-sm cursor-pointer"
                   color="white"
                   size={30}
                 />
+                </Link>
               </div>
             </div>
-          </section>
+          </div>
           <div className="flx w-full min-h-[300px] ">
             <ContactForm />
           </div>
-        </section>
-      </section>
+        </div>
+      </div>
     </>
   );
 };
