@@ -5,7 +5,6 @@ import { NextResponse } from "next/server";
 export async function POST(req:Request, res:Response) {
   const resend = new Resend(process.env.emailkey);
   const { useremail, phone, username, message } = await req.json();
-  console.log(phone);
   try {
     const { data } = await resend.emails.send({
       from: "onboarding@resend.dev",
