@@ -1,6 +1,6 @@
 import Greenred from "@/assets/greenred.svg";
 import Yellow from "@/assets/Yellow.png";
-import Rafi from "@/assets/my-image.jpeg";
+import Rafi from "@/assets/rafiali-svg.svg";
 import Image from "next/image";
 import Bio from "./Bio";
 import { AboutText } from "./AboutText";
@@ -12,7 +12,7 @@ generative AI-powered chatbots, I leverage cloud-native technologies to
 create innovative platforms that adapt and grow. Let's collaborate on
 your next digital adventure.`;
   return (
-    <section  id="about" className="mt-0 sm: relative overflow-hidden   ">
+    <section id="about" className="mt-0 sm: relative overflow-hidden   ">
       <div className="hidden sm:flex  ">
         <Image className="absolute top-0 myDuration  " src={Greenred} alt="" />
         <Image
@@ -46,9 +46,13 @@ your next digital adventure.`;
             </div>
           </button>
         </div>
-        <p className="flex sm:text-xl px-2 text-center z-20 py-2">
-          <AboutText />
-          <Image src={Rafi} alt="Rafi Ali" className="rounded-full" />
+        <p className="sm:text-xl px-2 text-center z-20 py-2">
+          <div className=" ">
+            <Image  src={Rafi} alt="Rafi Ali" className="rounded-full mx-auto" width={200} height={200} />
+          </div>
+          <div className="">
+            <AboutText />
+          </div>
         </p>
       </div>
       <div className="mt-4 sm:mt-8">
