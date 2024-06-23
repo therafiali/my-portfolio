@@ -7,9 +7,9 @@ import React, { useState } from "react";
 import { ToasterApp } from "../ui/toaster";
 
 export function ContactForm() {
-  let subject = "Email From therafiali portfolio website"
+  let subject = "Email From therafiali portfolio website";
   const [toaststatus, setToaststatus] = useState(false);
-  const [toastmsg, setToastmsg] = useState("Email not sent");
+  const [toastmsg, setToastmsg] = useState("Email Sent Successfully");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setphone] = useState("");
@@ -37,13 +37,12 @@ export function ContactForm() {
       } else {
         setToastmsg("Email not sent");
         console.error("Error sending email:", res.status);
-        window.location.href=`mailto:therafiali@gmail.com?subject=${subject}&body=Hey its ${name}, ${msg}`
+        window.location.href = `mailto:therafiali@gmail.com?subject=${subject}&body=Hey its ${name}, ${msg}`;
       }
     } catch (error) {
       console.log("error");
     }
   };
-
   return (
     <div className="rounded-md max-w-[30rem] w-full mx-auto sm:rounded-none md:rounded-2xl p-4 md:p-6 shadow-input bg-white dark:bg-black relative">
       <div className="">
@@ -95,6 +94,7 @@ export function ContactForm() {
               onChange={(e) => setmsg(e.target.value)}
             />
           </LabelInputContainer>
+
           <ToasterApp msg={toastmsg} />
         </form>
       </div>
