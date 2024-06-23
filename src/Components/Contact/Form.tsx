@@ -6,7 +6,7 @@ import pink from "@/assets/pinkyellow.svg";
 import blue from "@/assets/skyblue.svg";
 import line from "@/assets/roundline.svg";
 import { useEffect } from "react";
-import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Github, Linkedin, Twitter, Youtube } from "lucide-react";
 import { Button } from "@nextui-org/react";
 import { ContactForm } from "./ContactForm";
 import { Contacthighlight } from "./Contacthighlight";
@@ -123,6 +123,13 @@ const Form = () => {
                 </Link>
                 <Link target="_blank" href={"https://www.facebook.com/therafiali/"} >
                 <Facebook
+                  className="bg-custom-gradient p-1 rounded-sm cursor-pointer"
+                  color="white"
+                  size={30}
+                />
+                </Link>
+                <Link target="_blank" href={"https://www.youtube.com/@therafiali"} >
+                <Youtube 
                   className="bg-custom-gradient p-1 rounded-sm cursor-pointer"
                   color="white"
                   size={30}
