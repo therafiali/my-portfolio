@@ -1,6 +1,6 @@
 import Greenred from "@/assets/greenred.svg";
 import Yellow from "@/assets/Yellow.png";
-import Rafi from "@/assets/rafiali-svg.svg";
+import Rafi from "@/assets/my-image.png"
 import Image from "next/image";
 import Bio from "./Bio";
 import { AboutText } from "./AboutText";
