@@ -1,6 +1,4 @@
 import { HoverEffect } from "../ui/card-hover-effect";
-import Greenred from "@/assets/pinksqaure.svg";
-import Yellow from "@/assets/yellowblack.svg";
 import dine from "@/assets/dinemarket.png";
 import first from "@/assets/first.png";
 import portfolio from "@/assets/portfolio.png";
@@ -9,6 +7,8 @@ import panaverse from "@/assets/panaverse.png";
 import gallery from "@/assets/gallery.png";
 import chatbot from "@/assets/chatbot.jpg";
 import fastapi from "@/assets/fastapi.jpg";
+import mining from "@/assets/dashboard.png";
+import YourMunshi from "@/assets/yourmunshi.jpeg";
 import email from "@/assets/email.jpg";
 import autoresponder from "@/assets/autoresponder.jpg";
 
@@ -20,6 +20,38 @@ export function BlackCard() {
   );
 }
 export const projects = [
+  {
+    image: YourMunshi,
+    title: "Landing Page (AI STARTUP)",
+
+    link: "https://yourmunshi.net/",
+    skills: [
+      "Nextjs",
+      "React",
+      "Javasript",
+      "Typescript",
+      "Tailwind CSS",
+      "Shadcn UI",
+    ],
+    code: "/",
+  },
+  {
+    image: mining,
+    title: "Multi User Management Dashboard",
+
+    link: "/",
+    skills: [
+      "Nextjs",
+      "React",
+      "Javasript",
+      "Tailwind CSS",
+      'FASTAPI',
+      'MUI Library',
+      'MongoDB'
+    ],
+    code: "https://github.com/therafiali/Multi-Users-Management-Dashboard-UI"
+    // ",
+  },
   {
     image: dine,
     title: "Ecommerce Web App",

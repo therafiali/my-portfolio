@@ -34,6 +34,7 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
+          target="_blank"
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -66,6 +67,7 @@ export const HoverEffect = ({
                 <Link
                   className="flex items-center justify-center space-x-1"
                   href={item.link}
+                  target="_blank"
                 >
                   <p>Demo</p>
                   <Eye size={16} />
@@ -80,6 +82,8 @@ export const HoverEffect = ({
                 <Link
                   className="flex items-center justify-center space-x-1"
                   href={item.code}
+                  target="_blank"
+
                 >
                   <p>Code</p>
                   <Github size={16} />

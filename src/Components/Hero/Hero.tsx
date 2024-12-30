@@ -2,8 +2,7 @@ import orange from "@/assets/orangeyellow.svg";
 import BlueBall from "@/assets/blueblack.svg";
 import And from "@/assets/and.png";
 import Image from "next/image";
-import Greenred from "@/assets/Blueyellow.svg";
-import Yellow from "@/assets/orange.svg";
+
 
 const Hero = () => {
   return (
